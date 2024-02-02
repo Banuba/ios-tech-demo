@@ -1,0 +1,1875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EEBBD242166043000B1275A /* TextFieldWithInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBD232166043000B1275A /* TextFieldWithInset.swift */; };
+		4D0C850D21870FC90094BFD0 /* coreMLHair_256x144_7907.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C850C21870FC90094BFD0 /* coreMLHair_256x144_7907.mlmodel */; };
+		4D27DBED216371570007DB25 /* coreMLHands.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D27DBEC216371570007DB25 /* coreMLHands.mlmodel */; };
+		4D36FBA9215D16AD00D6A004 /* BNBTechnology_Background_Low_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D36FBA6215D16AC00D6A004 /* BNBTechnology_Background_Low_CoreML.mm */; };
+		4D36FBAB215D172F00D6A004 /* coreMLBackgroundLow.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D36FBAA215D172F00D6A004 /* coreMLBackgroundLow.mlmodel */; };
+		4DA0404A22243B3400EDFA00 /* coreMLHair_336x192.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0404822243B3400EDFA00 /* coreMLHair_336x192.mlmodel */; };
+		4DA040582225683B00EDFA00 /* coreMLLips.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DA040562225683B00EDFA00 /* coreMLLips.mlmodel */; };
+		4DA0405B22256A8500EDFA00 /* BNBTechnology_Lips_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0405A22256A8500EDFA00 /* BNBTechnology_Lips_CoreML.mm */; };
+		4DAEF39F21E60E280026FB09 /* coreMLEyes_New.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEF39D21E60E270026FB09 /* coreMLEyes_New.mlmodel */; };
+		4DAEF3A321E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEF3A221E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.mm */; };
+		4DB2B2D4216C9978000955F6 /* BNBTechnology_Skin_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2B2D2216C9977000955F6 /* BNBTechnology_Skin_CoreML.mm */; };
+		4DB2B2D6216C99AC000955F6 /* coreMLSkin.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2B2D5216C99AC000955F6 /* coreMLSkin.mlmodel */; };
+		4DBF2722237C05A600CE7039 /* BNBRNDModelDataHandSkeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF2721237C05A600CE7039 /* BNBRNDModelDataHandSkeleton.m */; };
+		4DBF272B237C09E100CE7039 /* BNBTechnology_Hands_Pekar_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF272A237C09E000CE7039 /* BNBTechnology_Hands_Pekar_CoreML.mm */; };
+		4DBF272D237C0CB600CE7039 /* coreMLHandsPekarMessendger.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF272C237C0CB600CE7039 /* coreMLHandsPekarMessendger.mlmodel */; };
+		4DBF2733237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF272F237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.mm */; };
+		4DBF2734237C0E7600CE7039 /* BNBTechnology_Hands_SSD.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF2730237C0E7600CE7039 /* BNBTechnology_Hands_SSD.mm */; };
+		4DBF2738237C107400CE7039 /* coreMLHandsModelSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF2737237C107400CE7039 /* coreMLHandsModelSK.mlmodel */; };
+		4DED956C2380022400FA303D /* coreMLHandsSSD.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4DED956B2380022400FA303D /* coreMLHandsSSD.mlmodel */; };
+		7B2F29D922DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F29D722DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.mm */; };
+		7B3D8A6D2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D8A6C2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.mm */; };
+		7B3D8A6F2146A1D6008C00C8 /* coreMLBodySegmentation.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D8A6E2146A1D6008C00C8 /* coreMLBodySegmentation.mlmodel */; };
+		7B3D8A732146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D8A722146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.mm */; };
+		7B68626B223BAB6B00134961 /* BNBTechnology_EyesDistance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B68626A223BAB6B00134961 /* BNBTechnology_EyesDistance.mm */; };
+		7B686271223BAE6100134961 /* BNBRNDModelDataEyesDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B686270223BAE6100134961 /* BNBRNDModelDataEyesDistance.m */; };
+		7BBCEDAD23E1C628009335C4 /* frx_neural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBCEDAB23E1C628009335C4 /* frx_neural.framework */; };
+		7BBCEDAE23E1C639009335C4 /* frx_neural.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBCEDAB23E1C628009335C4 /* frx_neural.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BF264C622648BE60001ACF6 /* BNBTechnology_Eyes_Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BF264C522648BE60001ACF6 /* BNBTechnology_Eyes_Wrapper.mm */; };
+		A1A6062E22C8D0EA00A77B9A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A6062D22C8D0EA00A77B9A /* opencv2.framework */; };
+		A1DBB20D22C3AC3000E9B175 /* BanubaSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DBB1E622C3A51800E9B175 /* BanubaSdk.framework */; };
+		A1DBB20E22C3AC3000E9B175 /* BanubaSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DBB1E622C3A51800E9B175 /* BanubaSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1DBB21122C3AC3C00E9B175 /* frxframework3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46169E2135CFCB00935F06 /* frxframework3.framework */; };
+		A1DBB21222C3AC3C00E9B175 /* frxframework3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD46169E2135CFCB00935F06 /* frxframework3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1F8E50D23795E3C009DDA7F /* client_token in Resources */ = {isa = PBXBuildFile; fileRef = A1F8E50A23795E3C009DDA7F /* client_token */; };
+		AC388F1A213ECCA90075589C /* BNBTechnology_Action_Units.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC388F17213ECCA90075589C /* BNBTechnology_Action_Units.mm */; };
+		AC388F1B213ECCA90075589C /* FRXBlendshapeAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC388F18213ECCA90075589C /* FRXBlendshapeAdapter.mm */; };
+		AC388F1D213ECD270075589C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AC388F1C213ECD260075589C /* art.scnassets */; };
+		AC388F1F213ECFC80075589C /* BNBRNDActionUnitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC388F1E213ECFC80075589C /* BNBRNDActionUnitsViewController.swift */; };
+		AC388F22213ED0FB0075589C /* BNBRNDModelDataActionUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = AC388F21213ED0FB0075589C /* BNBRNDModelDataActionUnits.m */; };
+		AC6FC486214A528B00AD9287 /* BNBRNDLandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FC485214A528B00AD9287 /* BNBRNDLandmarksViewController.swift */; };
+		AC6FC488214A618500AD9287 /* BNBRNDBodySegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FC487214A618500AD9287 /* BNBRNDBodySegmentationViewController.swift */; };
+		AC6FC48D214A9C1C00AD9287 /* BNBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FC48C214A9C1C00AD9287 /* BNBSlider.swift */; };
+		AC850300219047D6007E76E4 /* GetInTouchNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8502FF219047D6007E76E4 /* GetInTouchNativeViewController.swift */; };
+		AC85030421904A69007E76E4 /* GetInTouchHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030321904A69007E76E4 /* GetInTouchHeaderCell.swift */; };
+		AC85030621904A7E007E76E4 /* GetInTouchEmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030521904A7E007E76E4 /* GetInTouchEmailCell.swift */; };
+		AC85030821904A93007E76E4 /* GetInTouchTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030721904A93007E76E4 /* GetInTouchTextCell.swift */; };
+		AC85030A219078B1007E76E4 /* GetInTouchGDPRCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC850309219078B1007E76E4 /* GetInTouchGDPRCell.swift */; };
+		AC85030C219078C5007E76E4 /* GetInTouchSubmitButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030B219078C5007E76E4 /* GetInTouchSubmitButtonCell.swift */; };
+		AC85030E21907995007E76E4 /* GetInTouchLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030D21907995007E76E4 /* GetInTouchLabelCell.swift */; };
+		AC85031021907FEA007E76E4 /* GetInTouchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85030F21907FEA007E76E4 /* GetInTouchCell.swift */; };
+		AC85031221908A9B007E76E4 /* GetInTouchFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85031121908A9B007E76E4 /* GetInTouchFooterCell.swift */; };
+		AC94C8AF21889E2200C65952 /* BNBSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC94C8AD21889E2200C65952 /* BNBSettingsWebViewController.m */; };
+		AC94C8B021889E2200C65952 /* BNBSettingsWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC94C8AE21889E2200C65952 /* BNBSettingsWebViewController.xib */; };
+		AC9EF7B12163673E00BAA461 /* PinpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EF7B02163673E00BAA461 /* PinpointManager.swift */; };
+		ACB3A61C21414D39005EF13D /* effects in Resources */ = {isa = PBXBuildFile; fileRef = ACB3A61B21414D39005EF13D /* effects */; };
+		ACB3A6202146A858005EF13D /* BNBRNDBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3A61F2146A858005EF13D /* BNBRNDBackgroundViewController.swift */; };
+		ACB3A6232146AAA5005EF13D /* BNBRNDModelDataBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB3A6222146AAA5005EF13D /* BNBRNDModelDataBackground.m */; };
+		ACD6836E21493C9300ACD930 /* NoCameraAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6836C21493C9300ACD930 /* NoCameraAccessViewController.swift */; };
+		ACD6836F21493C9300ACD930 /* NoCameraAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD6836D21493C9300ACD930 /* NoCameraAccessViewController.xib */; };
+		ACECA8BA217E18B800CEA0F0 /* GetInTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECA8B9217E18B800CEA0F0 /* GetInTouchViewController.swift */; };
+		ACECA8BD217F4A1E00CEA0F0 /* TextViewWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECA8BC217F4A1E00CEA0F0 /* TextViewWithPlaceholder.swift */; };
+		CE35D0312151443C009AB90D /* coreMLHair_128x96.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD4616562135CBFD00935F06 /* coreMLHair_128x96.mlmodel */; };
+		CE507C8A2137EF4F0013CD84 /* BNBRNDHairSegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507C892137EF4F0013CD84 /* BNBRNDHairSegmentationViewController.swift */; };
+		CE507C8D2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507C8C2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.m */; };
+		CE507CA22137FD7C0013CD84 /* BNBRNDDistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CA12137FD7C0013CD84 /* BNBRNDDistanceViewController.swift */; };
+		CE507CB1213804980013CD84 /* BNBRNDColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CB0213804970013CD84 /* BNBRNDColorPickerViewController.swift */; };
+		CE507CB62138065B0013CD84 /* BNBRNDModelDataDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507CB52138065B0013CD84 /* BNBRNDModelDataDistance.m */; };
+		CE507CB8213808460013CD84 /* BNBRNDGlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CB7213808460013CD84 /* BNBRNDGlassesViewController.swift */; };
+		CE507CBD2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507CBC2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.m */; };
+		CE507CBF21380CE60013CD84 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CBE21380CE60013CD84 /* UIColor+Utils.swift */; };
+		CE507CC1213815970013CD84 /* BNBRNDBeardAndMustacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CC0213815970013CD84 /* BNBRNDBeardAndMustacheViewController.swift */; };
+		CE507CC4213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507CC3213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.m */; };
+		CE507CC721381D0C0013CD84 /* BNBRNDModelGenderAndAge.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507CC621381D0C0013CD84 /* BNBRNDModelGenderAndAge.m */; };
+		CE507CC921381D2D0013CD84 /* BNBRNDGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CC821381D2D0013CD84 /* BNBRNDGenderViewController.swift */; };
+		CE507CCB2138237D0013CD84 /* BNBRNDAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CCA2138237D0013CD84 /* BNBRNDAgeViewController.swift */; };
+		CE507CD421382E940013CD84 /* BNBRNDOcclusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CD321382E940013CD84 /* BNBRNDOcclusionViewController.swift */; };
+		CE507CD621383EE20013CD84 /* BNBRNDHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CD521383EE20013CD84 /* BNBRNDHandViewController.swift */; };
+		CE507CD8213920EF0013CD84 /* BNBRNDPulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CD7213920EF0013CD84 /* BNBRNDPulseViewController.swift */; };
+		CE507CDB2139404A0013CD84 /* BNBRNDModelDataPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE507CDA2139404A0013CD84 /* BNBRNDModelDataPulse.m */; };
+		CE507CDF213D11620013CD84 /* BNBTechnologySDKExpirienceBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CDE213D11620013CD84 /* BNBTechnologySDKExpirienceBehaviour.swift */; };
+		CE507CE2213D11E10013CD84 /* BNBSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507CE1213D11E10013CD84 /* BNBSDKViewController.swift */; };
+		CE507CE4213D12860013CD84 /* SDK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE507CE3213D12860013CD84 /* SDK.storyboard */; };
+		CE5607B3213D370100ADF595 /* BNBSDKExpirienceTechnologiesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5607B2213D370100ADF595 /* BNBSDKExpirienceTechnologiesHolder.swift */; };
+		CE5607B5213D371400ADF595 /* BNBSDKFeaturesTechnologiesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5607B4213D371400ADF595 /* BNBSDKFeaturesTechnologiesHolder.swift */; };
+		CE5607B7213D398100ADF595 /* BNBTechnologySDKBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5607B6213D398100ADF595 /* BNBTechnologySDKBehaviour.swift */; };
+		CE5607B9213D39BC00ADF595 /* BNBTechnologySDKFeaturesBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5607B8213D39BC00ADF595 /* BNBTechnologySDKFeaturesBehaviour.swift */; };
+		CE56E73A21538DB0003D521C /* BNBShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56E73921538DB0003D521C /* BNBShadowLabel.swift */; };
+		CE56E740215396CD003D521C /* BNBApplicationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56E73F215396CD003D521C /* BNBApplicationConfig.m */; };
+		CE56E7422153C8A0003D521C /* BNBApplicationConfigUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56E7412153C8A0003D521C /* BNBApplicationConfigUpdater.swift */; };
+		CE5BB4AD21352E4D0058743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4AC21352E4D0058743A /* AppDelegate.swift */; };
+		CE5BB4AF21352E4D0058743A /* BNBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4AE21352E4D0058743A /* BNBMainViewController.swift */; };
+		CE5BB4B221352E4D0058743A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5BB4B021352E4D0058743A /* Main.storyboard */; };
+		CE5BB4B421352E4E0058743A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5BB4B321352E4E0058743A /* Assets.xcassets */; };
+		CE5BB4B721352E4E0058743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5BB4B521352E4E0058743A /* LaunchScreen.storyboard */; };
+		CE5BB4C521354BEE0058743A /* BNBStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4C421354BEE0058743A /* BNBStyle.swift */; };
+		CE5BB4C721354DCB0058743A /* UIFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4C621354DCB0058743A /* UIFont+Utils.swift */; };
+		CE5BB4CA213550200058743A /* BNBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4C9213550200058743A /* BNBViewController.swift */; };
+		CE5BB4CC213550BF0058743A /* BNBTechNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4CB213550BF0058743A /* BNBTechNavigationViewController.swift */; };
+		CE5BB4D021355B570058743A /* BNBMainTechCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4CF21355B570058743A /* BNBMainTechCollectionViewCell.swift */; };
+		CE5BB4D221355ECA0058743A /* BNBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4D121355ECA0058743A /* BNBCollectionViewCell.swift */; };
+		CE5BB4D4213568D50058743A /* BNBSubTechCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4D3213568D50058743A /* BNBSubTechCollectionViewCell.swift */; };
+		CE5BB4D7213585EF0058743A /* BNBTechnology.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4D6213585EF0058743A /* BNBTechnology.swift */; };
+		CE5BB4D9213585FF0058743A /* BNBTechFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4D8213585FF0058743A /* BNBTechFeature.swift */; };
+		CE5BB4DF21358A4E0058743A /* BNBTechExractorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4DE21358A4E0058743A /* BNBTechExractorHelper.swift */; };
+		CE5BB4E521359D570058743A /* BNBTechnologyBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4E421359D570058743A /* BNBTechnologyBehaviour.swift */; };
+		CE5BB4E721359D8A0058743A /* BNBTechnologyRNDBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4E621359D8A0058743A /* BNBTechnologyRNDBehaviour.swift */; };
+		CE5BB4EB2135A16E0058743A /* BNBCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4EA2135A16E0058743A /* BNBCamera.swift */; };
+		CE5BB4ED2135A5E80058743A /* RND.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5BB4EC2135A5E80058743A /* RND.storyboard */; };
+		CE5BB4EF2135A6590058743A /* BNBRNDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4EE2135A6590058743A /* BNBRNDViewController.swift */; };
+		CE5BB4F22135A6BF0058743A /* Storyboard+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4F12135A6BF0058743A /* Storyboard+Utils.swift */; };
+		CE5BB4F42135A8150058743A /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BB4F32135A8150058743A /* UIView+Utils.swift */; };
+		CE7323D321634E87006B9FE0 /* BNBAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7323D121634E87006B9FE0 /* BNBAlertViewController.swift */; };
+		CE7323D421634E87006B9FE0 /* BNBAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7323D221634E87006B9FE0 /* BNBAlertViewController.xib */; };
+		CE7323D721635A49006B9FE0 /* BNBRNDModelDataOcclusion.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7323D621635A49006B9FE0 /* BNBRNDModelDataOcclusion.m */; };
+		CE7323DA21635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7323D921635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.m */; };
+		CE7323DD21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7323DC21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.m */; };
+		CE7323E0216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7323DF216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.m */; };
+		CE7323F82164AF10006B9FE0 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7323F72164AF10006B9FE0 /* Registration.storyboard */; };
+		CE7323FB2164AF41006B9FE0 /* BNBRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7323FA2164AF41006B9FE0 /* BNBRegistrationViewController.swift */; };
+		CE801580213E6D9300F69EA0 /* BNBSDKTechnologiesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80157F213E6D9300F69EA0 /* BNBSDKTechnologiesHolder.swift */; };
+		D207A36822562D2200FC8669 /* BNBRNDSkinSegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D207A36722562D2200FC8669 /* BNBRNDSkinSegmentationViewController.swift */; };
+		D245247423853EB0006F9127 /* BNBRNDHandsTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245247323853EB0006F9127 /* BNBRNDHandsTrackingViewController.swift */; };
+		D25CF020223FB2D000BA8C83 /* LipsSegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CF01F223FB2D000BA8C83 /* LipsSegmentationViewController.swift */; };
+		D25CF024223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = D25CF023223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.m */; };
+		D25EF09A22DDEFC30002EDA4 /* BNBGlassesCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25EF09922DDEFC30002EDA4 /* BNBGlassesCameraViewController.swift */; };
+		D25EF0A122DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D25EF0A022DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.m */; };
+		D27C408F223A946800C3386D /* BNBCameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D27C408E223A946800C3386D /* BNBCameraHelper.m */; };
+		D27C4092223A9D2100C3386D /* BNBEyeDistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C4091223A9D2100C3386D /* BNBEyeDistanceViewController.swift */; };
+		D2977DC4234649950004CBF5 /* AWSPinpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2977DC3234649950004CBF5 /* AWSPinpoint.framework */; };
+		D2977DC8234649A70004CBF5 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2977DC7234649A70004CBF5 /* AWSCore.framework */; };
+		D2D42DF6231D60BE00538A69 /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D42DF5231D60BE00538A69 /* BanubaEffectPlayer.framework */; };
+		D2D42DF7231D611A00538A69 /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D42DF5231D60BE00538A69 /* BanubaEffectPlayer.framework */; };
+		D2D42DF8231D611A00538A69 /* BanubaEffectPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2D42DF5231D60BE00538A69 /* BanubaEffectPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD4615DA2135C9EF00935F06 /* BNBRNDTechnologiesHolder.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615D92135C9EF00935F06 /* BNBRNDTechnologiesHolder.mm */; };
+		DD4616262135CA9000935F06 /* BNBTechnology_Glasses_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615DF2135CA8F00935F06 /* BNBTechnology_Glasses_CoreML.mm */; };
+		DD4616272135CA9000935F06 /* BNBTechnology_OpenCV_Face.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615E22135CA9000935F06 /* BNBTechnology_OpenCV_Face.mm */; };
+		DD4616292135CA9000935F06 /* BNBTechnology_Face_Recognition.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615E92135CA9000935F06 /* BNBTechnology_Face_Recognition.mm */; };
+		DD46162A2135CA9000935F06 /* BNBTechnology_Background_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615EC2135CA9000935F06 /* BNBTechnology_Background_CoreML.mm */; };
+		DD46162B2135CA9000935F06 /* BNBTechnology_Hair_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615F02135CA9000935F06 /* BNBTechnology_Hair_CoreML.mm */; };
+		DD46162D2135CA9000935F06 /* BNBTechnology_HairScin_Colors.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615F52135CA9000935F06 /* BNBTechnology_HairScin_Colors.mm */; };
+		DD46162E2135CA9000935F06 /* BNBTechnology_Hands_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4615F72135CA9000935F06 /* BNBTechnology_Hands_CoreML.mm */; };
+		DD4616312135CA9000935F06 /* BNBTechnology_Occlusion_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616012135CA9000935F06 /* BNBTechnology_Occlusion_CoreML.mm */; };
+		DD4616322135CA9000935F06 /* BNBTechnology_FRX.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616032135CA9000935F06 /* BNBTechnology_FRX.mm */; };
+		DD4616332135CA9000935F06 /* BNBTechnology_Pulse.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616062135CA9000935F06 /* BNBTechnology_Pulse.mm */; };
+		DD4616352135CA9000935F06 /* BNBTechnology_Ruler.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616112135CA9000935F06 /* BNBTechnology_Ruler.mm */; };
+		DD4616392135CA9000935F06 /* BNBTechnology_Personality_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD46161C2135CA9000935F06 /* BNBTechnology_Personality_CoreML.mm */; };
+		DD46163B2135CA9000935F06 /* BNBTechnology_Eyes_CoreML.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616212135CA9000935F06 /* BNBTechnology_Eyes_CoreML.mm */; };
+		DD46163C2135CA9000935F06 /* BNBTechnology_EyeGaze.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD4616242135CA9000935F06 /* BNBTechnology_EyeGaze.mm */; };
+		DD4616442135CB4400935F06 /* Contours.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD4616422135CB4400935F06 /* Contours.cpp */; };
+		DD4616452135CB4400935F06 /* HeadContours.bin in Resources */ = {isa = PBXBuildFile; fileRef = DD4616432135CB4400935F06 /* HeadContours.bin */; };
+		DD46166C2135CBFD00935F06 /* coreMLBackground.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD4616582135CBFD00935F06 /* coreMLBackground.mlmodel */; };
+		DD46166E2135CBFD00935F06 /* coreMLFaceBeard.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD46165A2135CBFD00935F06 /* coreMLFaceBeard.mlmodel */; };
+		DD46166F2135CBFD00935F06 /* coreMLOcclusion.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD46165B2135CBFD00935F06 /* coreMLOcclusion.mlmodel */; };
+		DD4616712135CBFD00935F06 /* coreMLPersonality.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD46165D2135CBFD00935F06 /* coreMLPersonality.mlmodel */; };
+		DD4616722135CBFD00935F06 /* coreMLEyes.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD46165E2135CBFD00935F06 /* coreMLEyes.mlmodel */; };
+		DD4616BE2135E8EA00935F06 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = DD4616BD2135E8EA00935F06 /* haarcascade_frontalface_alt.xml */; };
+		DD4617112136967600935F06 /* BNBRNDModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4617102136967600935F06 /* BNBRNDModelData.m */; };
+		DD4617152136978900935F06 /* BNBRNDModelDataSkinAndHairColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4617142136978900935F06 /* BNBRNDModelDataSkinAndHairColor.m */; };
+		DD4617172136A13900935F06 /* BNBRNDFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4617162136A13900935F06 /* BNBRNDFeatureViewController.swift */; };
+		DD4617192136A3BB00935F06 /* BNBRNDFeatureSkinAndHairColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4617182136A3BB00935F06 /* BNBRNDFeatureSkinAndHairColorViewController.swift */; };
+		DD46171B2136C37700935F06 /* BNBRNDEyeSegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46171A2136C37700935F06 /* BNBRNDEyeSegmentationViewController.swift */; };
+		DD46171E2136C39900935F06 /* BNBRNDModelEyeSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD46171D2136C39900935F06 /* BNBRNDModelEyeSegmentation.m */; };
+		DD4617212136D6FB00935F06 /* BNBColorPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4617202136D6FB00935F06 /* BNBColorPickerCollectionViewCell.swift */; };
+		DE053CC25CB03444C85DAB96 /* Pods_TechDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F97C5BB42C8F4D26A1A119 /* Pods_TechDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1DBB1E522C3A51800E9B175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1DBB1C322C3A51800E9B175 /* BanubaSdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57AB757820FF4A240013C11F;
+			remoteInfo = BanubaSdk;
+		};
+		D2C36DF2237AEE9800CC2E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1DBB1C322C3A51800E9B175 /* BanubaSdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 57AB757720FF4A240013C11F;
+			remoteInfo = BanubaSdk;
+		};
+		DD46169D2135CFCB00935F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD4616992135CFCB00935F06 /* frxframework3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B67203B2046EF070021311A;
+			remoteInfo = frxframework3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1DBB20222C3A63000E9B175 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BBCEDAE23E1C639009335C4 /* frx_neural.framework in Embed Frameworks */,
+				A1DBB21222C3AC3C00E9B175 /* frxframework3.framework in Embed Frameworks */,
+				D2D42DF8231D611A00538A69 /* BanubaEffectPlayer.framework in Embed Frameworks */,
+				A1DBB20E22C3AC3000E9B175 /* BanubaSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0121FD148B6EB557C655BB58 /* Pods-TechDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		15F97C5BB42C8F4D26A1A119 /* Pods_TechDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEBBD232166043000B1275A /* TextFieldWithInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithInset.swift; sourceTree = "<group>"; };
+		4D0C850C21870FC90094BFD0 /* coreMLHair_256x144_7907.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHair_256x144_7907.mlmodel; sourceTree = "<group>"; };
+		4D27DBEC216371570007DB25 /* coreMLHands.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHands.mlmodel; sourceTree = "<group>"; };
+		4D36FBA6215D16AC00D6A004 /* BNBTechnology_Background_Low_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Background_Low_CoreML.mm; sourceTree = "<group>"; };
+		4D36FBA7215D16AC00D6A004 /* BNBTechnology_Background_Low_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Background_Low_CoreML.h; sourceTree = "<group>"; };
+		4D36FBAA215D172F00D6A004 /* coreMLBackgroundLow.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLBackgroundLow.mlmodel; sourceTree = "<group>"; };
+		4DA0404822243B3400EDFA00 /* coreMLHair_336x192.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHair_336x192.mlmodel; sourceTree = "<group>"; };
+		4DA040562225683B00EDFA00 /* coreMLLips.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLLips.mlmodel; sourceTree = "<group>"; };
+		4DA0405922256A8500EDFA00 /* BNBTechnology_Lips_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Lips_CoreML.h; sourceTree = "<group>"; };
+		4DA0405A22256A8500EDFA00 /* BNBTechnology_Lips_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Lips_CoreML.mm; sourceTree = "<group>"; };
+		4DAEF39D21E60E270026FB09 /* coreMLEyes_New.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLEyes_New.mlmodel; sourceTree = "<group>"; };
+		4DAEF3A121E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Eyes_New_CoreML.h; sourceTree = "<group>"; };
+		4DAEF3A221E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Eyes_New_CoreML.mm; sourceTree = "<group>"; };
+		4DB2B2D1216C9977000955F6 /* BNBTechnology_Skin_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Skin_CoreML.h; sourceTree = "<group>"; };
+		4DB2B2D2216C9977000955F6 /* BNBTechnology_Skin_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Skin_CoreML.mm; sourceTree = "<group>"; };
+		4DB2B2D5216C99AC000955F6 /* coreMLSkin.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLSkin.mlmodel; sourceTree = "<group>"; };
+		4DBF2721237C05A600CE7039 /* BNBRNDModelDataHandSkeleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataHandSkeleton.m; sourceTree = "<group>"; };
+		4DBF2723237C05D300CE7039 /* BNBRNDModelDataHandSkeleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataHandSkeleton.h; sourceTree = "<group>"; };
+		4DBF2729237C09E000CE7039 /* BNBTechnology_Hands_Pekar_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Hands_Pekar_CoreML.h; sourceTree = "<group>"; };
+		4DBF272A237C09E000CE7039 /* BNBTechnology_Hands_Pekar_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Hands_Pekar_CoreML.mm; sourceTree = "<group>"; };
+		4DBF272C237C0CB600CE7039 /* coreMLHandsPekarMessendger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHandsPekarMessendger.mlmodel; sourceTree = "<group>"; };
+		4DBF272F237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Hands_Skeleton_CoreML.mm; sourceTree = "<group>"; };
+		4DBF2730237C0E7600CE7039 /* BNBTechnology_Hands_SSD.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Hands_SSD.mm; sourceTree = "<group>"; };
+		4DBF2731237C0E7600CE7039 /* BNBTechnology_Hands_SSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Hands_SSD.h; sourceTree = "<group>"; };
+		4DBF2732237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Hands_Skeleton_CoreML.h; sourceTree = "<group>"; };
+		4DBF2737237C107400CE7039 /* coreMLHandsModelSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHandsModelSK.mlmodel; sourceTree = "<group>"; };
+		4DED956B2380022400FA303D /* coreMLHandsSSD.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHandsSSD.mlmodel; sourceTree = "<group>"; };
+		7B2F29D722DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BNBTechnology_Glasses_Camera.mm; path = Glasses_Camera/BNBTechnology_Glasses_Camera.mm; sourceTree = "<group>"; };
+		7B2F29D822DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNBTechnology_Glasses_Camera.h; path = Glasses_Camera/BNBTechnology_Glasses_Camera.h; sourceTree = "<group>"; };
+		7B3D8A6B2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNBTechnology_Body_Segmentation.h; path = Body_Segmentation/BNBTechnology_Body_Segmentation.h; sourceTree = "<group>"; };
+		7B3D8A6C2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BNBTechnology_Body_Segmentation.mm; path = Body_Segmentation/BNBTechnology_Body_Segmentation.mm; sourceTree = "<group>"; };
+		7B3D8A6E2146A1D6008C00C8 /* coreMLBodySegmentation.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLBodySegmentation.mlmodel; sourceTree = "<group>"; };
+		7B3D8A712146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Wrapper_Segmentation.h; sourceTree = "<group>"; };
+		7B3D8A722146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Wrapper_Segmentation.mm; sourceTree = "<group>"; };
+		7B686269223BAB6B00134961 /* BNBTechnology_EyesDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNBTechnology_EyesDistance.h; path = Technologies/Eyes_Distance/BNBTechnology_EyesDistance.h; sourceTree = "<group>"; };
+		7B68626A223BAB6B00134961 /* BNBTechnology_EyesDistance.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BNBTechnology_EyesDistance.mm; path = Technologies/Eyes_Distance/BNBTechnology_EyesDistance.mm; sourceTree = "<group>"; };
+		7B68626E223BAE4E00134961 /* BNBRNDModelDataEyesDistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataEyesDistance.h; sourceTree = "<group>"; };
+		7B686270223BAE6100134961 /* BNBRNDModelDataEyesDistance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataEyesDistance.m; sourceTree = "<group>"; };
+		7BBCEDAB23E1C628009335C4 /* frx_neural.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = frx_neural.framework; path = External/FRXNeuralFramework/frx_neural.framework; sourceTree = SOURCE_ROOT; };
+		7BF264BD225DEF620001ACF6 /* BNBTechnology_Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNBTechnology_Math.h; path = TechDemo/Technologies/RND/Technologies/BNBTechnology_Math.h; sourceTree = SOURCE_ROOT; };
+		7BF264C422648BD60001ACF6 /* BNBTechnology_Eyes_Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Eyes_Wrapper.h; sourceTree = "<group>"; };
+		7BF264C522648BE60001ACF6 /* BNBTechnology_Eyes_Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Eyes_Wrapper.mm; sourceTree = "<group>"; };
+		A1A6062D22C8D0EA00A77B9A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../facerecognitionlib/third/opencv/opencv2.framework; sourceTree = "<group>"; };
+		A1DBB1C322C3A51800E9B175 /* BanubaSdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BanubaSdk.xcodeproj; sourceTree = "<group>"; };
+		A1F8E50A23795E3C009DDA7F /* client_token */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client_token; sourceTree = "<group>"; };
+		AC388F16213ECCA80075589C /* FRXBlendshapeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRXBlendshapeAdapter.h; sourceTree = "<group>"; };
+		AC388F17213ECCA90075589C /* BNBTechnology_Action_Units.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Action_Units.mm; sourceTree = "<group>"; };
+		AC388F18213ECCA90075589C /* FRXBlendshapeAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRXBlendshapeAdapter.mm; sourceTree = "<group>"; };
+		AC388F19213ECCA90075589C /* BNBTechnology_Action_Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Action_Units.h; sourceTree = "<group>"; };
+		AC388F1C213ECD260075589C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		AC388F1E213ECFC80075589C /* BNBRNDActionUnitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDActionUnitsViewController.swift; sourceTree = "<group>"; };
+		AC388F20213ED0FB0075589C /* BNBRNDModelDataActionUnits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataActionUnits.h; sourceTree = "<group>"; };
+		AC388F21213ED0FB0075589C /* BNBRNDModelDataActionUnits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataActionUnits.m; sourceTree = "<group>"; };
+		AC6FC485214A528B00AD9287 /* BNBRNDLandmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDLandmarksViewController.swift; sourceTree = "<group>"; };
+		AC6FC487214A618500AD9287 /* BNBRNDBodySegmentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDBodySegmentationViewController.swift; sourceTree = "<group>"; };
+		AC6FC48C214A9C1C00AD9287 /* BNBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSlider.swift; sourceTree = "<group>"; };
+		AC8502FF219047D6007E76E4 /* GetInTouchNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchNativeViewController.swift; sourceTree = "<group>"; };
+		AC85030321904A69007E76E4 /* GetInTouchHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchHeaderCell.swift; sourceTree = "<group>"; };
+		AC85030521904A7E007E76E4 /* GetInTouchEmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchEmailCell.swift; sourceTree = "<group>"; };
+		AC85030721904A93007E76E4 /* GetInTouchTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchTextCell.swift; sourceTree = "<group>"; };
+		AC850309219078B1007E76E4 /* GetInTouchGDPRCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchGDPRCell.swift; sourceTree = "<group>"; };
+		AC85030B219078C5007E76E4 /* GetInTouchSubmitButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchSubmitButtonCell.swift; sourceTree = "<group>"; };
+		AC85030D21907995007E76E4 /* GetInTouchLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchLabelCell.swift; sourceTree = "<group>"; };
+		AC85030F21907FEA007E76E4 /* GetInTouchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchCell.swift; sourceTree = "<group>"; };
+		AC85031121908A9B007E76E4 /* GetInTouchFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchFooterCell.swift; sourceTree = "<group>"; };
+		AC94C8AC21889E2200C65952 /* BNBSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBSettingsWebViewController.h; sourceTree = "<group>"; };
+		AC94C8AD21889E2200C65952 /* BNBSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNBSettingsWebViewController.m; sourceTree = "<group>"; };
+		AC94C8AE21889E2200C65952 /* BNBSettingsWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNBSettingsWebViewController.xib; sourceTree = "<group>"; };
+		AC9EF7B02163673E00BAA461 /* PinpointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinpointManager.swift; sourceTree = "<group>"; };
+		ACB3A61B21414D39005EF13D /* effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = effects; sourceTree = "<group>"; };
+		ACB3A61F2146A858005EF13D /* BNBRNDBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDBackgroundViewController.swift; sourceTree = "<group>"; };
+		ACB3A6212146AAA5005EF13D /* BNBRNDModelDataBackground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataBackground.h; sourceTree = "<group>"; };
+		ACB3A6222146AAA5005EF13D /* BNBRNDModelDataBackground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataBackground.m; sourceTree = "<group>"; };
+		ACD6836C21493C9300ACD930 /* NoCameraAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCameraAccessViewController.swift; sourceTree = "<group>"; };
+		ACD6836D21493C9300ACD930 /* NoCameraAccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoCameraAccessViewController.xib; sourceTree = "<group>"; };
+		ACECA8B9217E18B800CEA0F0 /* GetInTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInTouchViewController.swift; sourceTree = "<group>"; };
+		ACECA8BC217F4A1E00CEA0F0 /* TextViewWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWithPlaceholder.swift; sourceTree = "<group>"; };
+		CE507C892137EF4F0013CD84 /* BNBRNDHairSegmentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDHairSegmentationViewController.swift; sourceTree = "<group>"; };
+		CE507C8B2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataHairSegmentation.h; sourceTree = "<group>"; };
+		CE507C8C2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataHairSegmentation.m; sourceTree = "<group>"; };
+		CE507CA12137FD7C0013CD84 /* BNBRNDDistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDDistanceViewController.swift; sourceTree = "<group>"; };
+		CE507CB0213804970013CD84 /* BNBRNDColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDColorPickerViewController.swift; sourceTree = "<group>"; };
+		CE507CB42138065B0013CD84 /* BNBRNDModelDataDistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataDistance.h; sourceTree = "<group>"; };
+		CE507CB52138065B0013CD84 /* BNBRNDModelDataDistance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataDistance.m; sourceTree = "<group>"; };
+		CE507CB7213808460013CD84 /* BNBRNDGlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDGlassesViewController.swift; sourceTree = "<group>"; };
+		CE507CBB2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataGlassesDetector.h; sourceTree = "<group>"; };
+		CE507CBC2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataGlassesDetector.m; sourceTree = "<group>"; };
+		CE507CBE21380CE60013CD84 /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		CE507CC0213815970013CD84 /* BNBRNDBeardAndMustacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDBeardAndMustacheViewController.swift; sourceTree = "<group>"; };
+		CE507CC2213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataBeardsAndMustache.h; sourceTree = "<group>"; };
+		CE507CC3213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataBeardsAndMustache.m; sourceTree = "<group>"; };
+		CE507CC521381D0C0013CD84 /* BNBRNDModelGenderAndAge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelGenderAndAge.h; sourceTree = "<group>"; };
+		CE507CC621381D0C0013CD84 /* BNBRNDModelGenderAndAge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelGenderAndAge.m; sourceTree = "<group>"; };
+		CE507CC821381D2D0013CD84 /* BNBRNDGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDGenderViewController.swift; sourceTree = "<group>"; };
+		CE507CCA2138237D0013CD84 /* BNBRNDAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDAgeViewController.swift; sourceTree = "<group>"; };
+		CE507CCE2138249D0013CD84 /* BNBRNDRaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDRaceViewController.swift; sourceTree = "<group>"; };
+		CE507CD0213824CA0013CD84 /* BNBRNDModeDataRace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModeDataRace.h; sourceTree = "<group>"; };
+		CE507CD1213824CA0013CD84 /* BNBRNDModeDataRace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModeDataRace.m; sourceTree = "<group>"; };
+		CE507CD321382E940013CD84 /* BNBRNDOcclusionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDOcclusionViewController.swift; sourceTree = "<group>"; };
+		CE507CD521383EE20013CD84 /* BNBRNDHandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDHandViewController.swift; sourceTree = "<group>"; };
+		CE507CD7213920EF0013CD84 /* BNBRNDPulseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDPulseViewController.swift; sourceTree = "<group>"; };
+		CE507CD92139404A0013CD84 /* BNBRNDModelDataPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataPulse.h; sourceTree = "<group>"; };
+		CE507CDA2139404A0013CD84 /* BNBRNDModelDataPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataPulse.m; sourceTree = "<group>"; };
+		CE507CDE213D11620013CD84 /* BNBTechnologySDKExpirienceBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnologySDKExpirienceBehaviour.swift; sourceTree = "<group>"; };
+		CE507CE1213D11E10013CD84 /* BNBSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSDKViewController.swift; sourceTree = "<group>"; };
+		CE507CE3213D12860013CD84 /* SDK.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SDK.storyboard; sourceTree = "<group>"; };
+		CE5607B2213D370100ADF595 /* BNBSDKExpirienceTechnologiesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSDKExpirienceTechnologiesHolder.swift; sourceTree = "<group>"; };
+		CE5607B4213D371400ADF595 /* BNBSDKFeaturesTechnologiesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSDKFeaturesTechnologiesHolder.swift; sourceTree = "<group>"; };
+		CE5607B6213D398100ADF595 /* BNBTechnologySDKBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnologySDKBehaviour.swift; sourceTree = "<group>"; };
+		CE5607B8213D39BC00ADF595 /* BNBTechnologySDKFeaturesBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnologySDKFeaturesBehaviour.swift; sourceTree = "<group>"; };
+		CE56E73921538DB0003D521C /* BNBShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBShadowLabel.swift; sourceTree = "<group>"; };
+		CE56E73E215396CD003D521C /* BNBApplicationConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBApplicationConfig.h; sourceTree = "<group>"; };
+		CE56E73F215396CD003D521C /* BNBApplicationConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBApplicationConfig.m; sourceTree = "<group>"; };
+		CE56E7412153C8A0003D521C /* BNBApplicationConfigUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBApplicationConfigUpdater.swift; sourceTree = "<group>"; };
+		CE5BB4A921352E4D0058743A /* TechDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5BB4AC21352E4D0058743A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE5BB4AE21352E4D0058743A /* BNBMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBMainViewController.swift; sourceTree = "<group>"; };
+		CE5BB4B121352E4D0058743A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5BB4B321352E4E0058743A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5BB4B621352E4E0058743A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5BB4B821352E4E0058743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5BB4C421354BEE0058743A /* BNBStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBStyle.swift; sourceTree = "<group>"; };
+		CE5BB4C621354DCB0058743A /* UIFont+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Utils.swift"; sourceTree = "<group>"; };
+		CE5BB4C9213550200058743A /* BNBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBViewController.swift; sourceTree = "<group>"; };
+		CE5BB4CB213550BF0058743A /* BNBTechNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechNavigationViewController.swift; sourceTree = "<group>"; };
+		CE5BB4CF21355B570058743A /* BNBMainTechCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBMainTechCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE5BB4D121355ECA0058743A /* BNBCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE5BB4D3213568D50058743A /* BNBSubTechCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSubTechCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE5BB4D6213585EF0058743A /* BNBTechnology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnology.swift; sourceTree = "<group>"; };
+		CE5BB4D8213585FF0058743A /* BNBTechFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechFeature.swift; sourceTree = "<group>"; };
+		CE5BB4DB213587710058743A /* Technologies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Technologies.plist; sourceTree = "<group>"; };
+		CE5BB4DE21358A4E0058743A /* BNBTechExractorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechExractorHelper.swift; sourceTree = "<group>"; };
+		CE5BB4E421359D570058743A /* BNBTechnologyBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnologyBehaviour.swift; sourceTree = "<group>"; };
+		CE5BB4E621359D8A0058743A /* BNBTechnologyRNDBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBTechnologyRNDBehaviour.swift; sourceTree = "<group>"; };
+		CE5BB4EA2135A16E0058743A /* BNBCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNBCamera.swift; sourceTree = "<group>"; };
+		CE5BB4EC2135A5E80058743A /* RND.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RND.storyboard; sourceTree = "<group>"; };
+		CE5BB4EE2135A6590058743A /* BNBRNDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDViewController.swift; sourceTree = "<group>"; };
+		CE5BB4F12135A6BF0058743A /* Storyboard+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utils.swift"; sourceTree = "<group>"; };
+		CE5BB4F32135A8150058743A /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		CE7323D121634E87006B9FE0 /* BNBAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBAlertViewController.swift; sourceTree = "<group>"; };
+		CE7323D221634E87006B9FE0 /* BNBAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BNBAlertViewController.xib; sourceTree = "<group>"; };
+		CE7323D521635A49006B9FE0 /* BNBRNDModelDataOcclusion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataOcclusion.h; sourceTree = "<group>"; };
+		CE7323D621635A49006B9FE0 /* BNBRNDModelDataOcclusion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataOcclusion.m; sourceTree = "<group>"; };
+		CE7323D821635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataBodySegmentation.h; sourceTree = "<group>"; };
+		CE7323D921635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataBodySegmentation.m; sourceTree = "<group>"; };
+		CE7323DB21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataSegmentation.h; sourceTree = "<group>"; };
+		CE7323DC21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataSegmentation.m; sourceTree = "<group>"; };
+		CE7323DE216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataHandSegmentation.h; sourceTree = "<group>"; };
+		CE7323DF216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataHandSegmentation.m; sourceTree = "<group>"; };
+		CE7323F72164AF10006B9FE0 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		CE7323FA2164AF41006B9FE0 /* BNBRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRegistrationViewController.swift; sourceTree = "<group>"; };
+		CE80157F213E6D9300F69EA0 /* BNBSDKTechnologiesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBSDKTechnologiesHolder.swift; sourceTree = "<group>"; };
+		D207A36722562D2200FC8669 /* BNBRNDSkinSegmentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDSkinSegmentationViewController.swift; sourceTree = "<group>"; };
+		D245247323853EB0006F9127 /* BNBRNDHandsTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDHandsTrackingViewController.swift; sourceTree = "<group>"; };
+		D25CF01F223FB2D000BA8C83 /* LipsSegmentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsSegmentationViewController.swift; sourceTree = "<group>"; };
+		D25CF022223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelLipsSegmentation.h; sourceTree = "<group>"; };
+		D25CF023223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelLipsSegmentation.m; sourceTree = "<group>"; };
+		D25EF09922DDEFC30002EDA4 /* BNBGlassesCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBGlassesCameraViewController.swift; sourceTree = "<group>"; };
+		D25EF09F22DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataGlassCamera.h; sourceTree = "<group>"; };
+		D25EF0A022DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataGlassCamera.m; sourceTree = "<group>"; };
+		D27C408D223A946800C3386D /* BNBCameraHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBCameraHelper.h; sourceTree = "<group>"; };
+		D27C408E223A946800C3386D /* BNBCameraHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBCameraHelper.m; sourceTree = "<group>"; };
+		D27C4091223A9D2100C3386D /* BNBEyeDistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBEyeDistanceViewController.swift; sourceTree = "<group>"; };
+		D2977DC3234649950004CBF5 /* AWSPinpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSPinpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2977DC7234649A70004CBF5 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D42DF5231D60BE00538A69 /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaEffectPlayer.framework; path = External/EffectPlayerFramework/BanubaEffectPlayer.framework; sourceTree = SOURCE_ROOT; };
+		D6C4007542483AA626A10CF5 /* Pods-TechDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DD4615D72135C9EF00935F06 /* TechDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TechDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD4615D82135C9EF00935F06 /* BNBRNDTechnologiesHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDTechnologiesHolder.h; sourceTree = "<group>"; };
+		DD4615D92135C9EF00935F06 /* BNBRNDTechnologiesHolder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBRNDTechnologiesHolder.mm; sourceTree = "<group>"; };
+		DD4615DF2135CA8F00935F06 /* BNBTechnology_Glasses_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Glasses_CoreML.mm; sourceTree = "<group>"; };
+		DD4615E02135CA8F00935F06 /* BNBTechnology_Glasses_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Glasses_CoreML.h; sourceTree = "<group>"; };
+		DD4615E22135CA9000935F06 /* BNBTechnology_OpenCV_Face.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_OpenCV_Face.mm; sourceTree = "<group>"; };
+		DD4615E32135CA9000935F06 /* BNBTechnology_OpenCV_Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_OpenCV_Face.h; sourceTree = "<group>"; };
+		DD4615E82135CA9000935F06 /* BNBTechnology_Face_Recognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Face_Recognition.h; sourceTree = "<group>"; };
+		DD4615E92135CA9000935F06 /* BNBTechnology_Face_Recognition.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Face_Recognition.mm; sourceTree = "<group>"; };
+		DD4615EA2135CA9000935F06 /* BNBTechnology_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Utils.h; sourceTree = "<group>"; };
+		DD4615EC2135CA9000935F06 /* BNBTechnology_Background_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Background_CoreML.mm; sourceTree = "<group>"; };
+		DD4615ED2135CA9000935F06 /* BNBTechnology_Background_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Background_CoreML.h; sourceTree = "<group>"; };
+		DD4615F02135CA9000935F06 /* BNBTechnology_Hair_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Hair_CoreML.mm; sourceTree = "<group>"; };
+		DD4615F12135CA9000935F06 /* BNBTechnology_Hair_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Hair_CoreML.h; sourceTree = "<group>"; };
+		DD4615F42135CA9000935F06 /* BNBTechnology_HairScin_Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_HairScin_Colors.h; sourceTree = "<group>"; };
+		DD4615F52135CA9000935F06 /* BNBTechnology_HairScin_Colors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_HairScin_Colors.mm; sourceTree = "<group>"; };
+		DD4615F72135CA9000935F06 /* BNBTechnology_Hands_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Hands_CoreML.mm; sourceTree = "<group>"; };
+		DD4615F82135CA9000935F06 /* BNBTechnology_Hands_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Hands_CoreML.h; sourceTree = "<group>"; };
+		DD4615FE2135CA9000935F06 /* BNBTechnologies_Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnologies_Demo.h; sourceTree = "<group>"; };
+		DD4616002135CA9000935F06 /* BNBTechnology_OcclusionBase_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_OcclusionBase_CoreML.h; sourceTree = "<group>"; };
+		DD4616012135CA9000935F06 /* BNBTechnology_Occlusion_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Occlusion_CoreML.mm; sourceTree = "<group>"; };
+		DD4616032135CA9000935F06 /* BNBTechnology_FRX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_FRX.mm; sourceTree = "<group>"; };
+		DD4616042135CA9000935F06 /* BNBTechnology_FRX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_FRX.h; sourceTree = "<group>"; };
+		DD4616062135CA9000935F06 /* BNBTechnology_Pulse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Pulse.mm; sourceTree = "<group>"; };
+		DD4616072135CA9000935F06 /* BNBTechnology_Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Pulse.h; sourceTree = "<group>"; };
+		DD4616082135CA9000935F06 /* BNBTechnology_Pulse_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Pulse_Base.h; sourceTree = "<group>"; };
+		DD46160A2135CA9000935F06 /* BNBTechnology_Beard_Moustache_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Beard_Moustache_CoreML.h; sourceTree = "<group>"; };
+		DD46160C2135CA9000935F06 /* BNBTechnology_Race_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Race_CoreML.mm; sourceTree = "<group>"; };
+		DD46160D2135CA9000935F06 /* BNBTechnology_Race_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Race_CoreML.h; sourceTree = "<group>"; };
+		DD46160E2135CA9000935F06 /* BNBTechnology_Execute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Execute.h; sourceTree = "<group>"; };
+		DD4616102135CA9000935F06 /* BNBTechnology_Ruler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Ruler.h; sourceTree = "<group>"; };
+		DD4616112135CA9000935F06 /* BNBTechnology_Ruler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Ruler.mm; sourceTree = "<group>"; };
+		DD4616132135CA9000935F06 /* BNBTechnology_AgeGender_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_AgeGender_CoreML.h; sourceTree = "<group>"; };
+		DD4616142135CA9000935F06 /* BNBTechnology_AgeGender_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_AgeGender_CoreML.mm; sourceTree = "<group>"; };
+		DD46161B2135CA9000935F06 /* BNBTechnology_Personality_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Personality_CoreML.h; sourceTree = "<group>"; };
+		DD46161C2135CA9000935F06 /* BNBTechnology_Personality_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Personality_CoreML.mm; sourceTree = "<group>"; };
+		DD4616212135CA9000935F06 /* BNBTechnology_Eyes_CoreML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_Eyes_CoreML.mm; sourceTree = "<group>"; };
+		DD4616222135CA9000935F06 /* BNBTechnology_Eyes_CoreML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_Eyes_CoreML.h; sourceTree = "<group>"; };
+		DD4616242135CA9000935F06 /* BNBTechnology_EyeGaze.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNBTechnology_EyeGaze.mm; sourceTree = "<group>"; };
+		DD4616252135CA9000935F06 /* BNBTechnology_EyeGaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBTechnology_EyeGaze.h; sourceTree = "<group>"; };
+		DD4616412135CB4400935F06 /* Contours.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Contours.hpp; sourceTree = "<group>"; };
+		DD4616422135CB4400935F06 /* Contours.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Contours.cpp; sourceTree = "<group>"; };
+		DD4616432135CB4400935F06 /* HeadContours.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = HeadContours.bin; sourceTree = "<group>"; };
+		DD4616472135CBBC00935F06 /* FRXDataStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRXDataStruct.h; sourceTree = "<group>"; };
+		DD4616492135CBFD00935F06 /* coreMLHair_640x480.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHair_640x480.mlmodel; sourceTree = "<group>"; };
+		DD46164A2135CBFD00935F06 /* coreMLGender.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLGender.mlmodel; sourceTree = "<group>"; };
+		DD46164C2135CBFD00935F06 /* coreMLAge.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLAge.mlmodel; sourceTree = "<group>"; };
+		DD4616552135CBFD00935F06 /* coreMLHair_64x48.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHair_64x48.mlmodel; sourceTree = "<group>"; };
+		DD4616562135CBFD00935F06 /* coreMLHair_128x96.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLHair_128x96.mlmodel; sourceTree = "<group>"; };
+		DD4616572135CBFD00935F06 /* coreMLRace.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLRace.mlmodel; sourceTree = "<group>"; };
+		DD4616582135CBFD00935F06 /* coreMLBackground.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLBackground.mlmodel; sourceTree = "<group>"; };
+		DD46165A2135CBFD00935F06 /* coreMLFaceBeard.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLFaceBeard.mlmodel; sourceTree = "<group>"; };
+		DD46165B2135CBFD00935F06 /* coreMLOcclusion.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLOcclusion.mlmodel; sourceTree = "<group>"; };
+		DD46165D2135CBFD00935F06 /* coreMLPersonality.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLPersonality.mlmodel; sourceTree = "<group>"; };
+		DD46165E2135CBFD00935F06 /* coreMLEyes.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreMLEyes.mlmodel; sourceTree = "<group>"; };
+		DD4616992135CFCB00935F06 /* frxframework3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = frxframework3.xcodeproj; sourceTree = "<group>"; };
+		DD4616BD2135E8EA00935F06 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		DD46170D213694FC00935F06 /* coreMLAgeBegeza.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coreMLAgeBegeza.mlmodel; path = TechDemo/Technologies/RND/CoreML/Test/coreMLAgeBegeza.mlmodel; sourceTree = SOURCE_ROOT; };
+		DD46170F2136967600935F06 /* BNBRNDModelData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelData.h; sourceTree = "<group>"; };
+		DD4617102136967600935F06 /* BNBRNDModelData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelData.m; sourceTree = "<group>"; };
+		DD4617132136978900935F06 /* BNBRNDModelDataSkinAndHairColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelDataSkinAndHairColor.h; sourceTree = "<group>"; };
+		DD4617142136978900935F06 /* BNBRNDModelDataSkinAndHairColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelDataSkinAndHairColor.m; sourceTree = "<group>"; };
+		DD4617162136A13900935F06 /* BNBRNDFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDFeatureViewController.swift; sourceTree = "<group>"; };
+		DD4617182136A3BB00935F06 /* BNBRNDFeatureSkinAndHairColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDFeatureSkinAndHairColorViewController.swift; sourceTree = "<group>"; };
+		DD46171A2136C37700935F06 /* BNBRNDEyeSegmentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBRNDEyeSegmentationViewController.swift; sourceTree = "<group>"; };
+		DD46171C2136C39900935F06 /* BNBRNDModelEyeSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBRNDModelEyeSegmentation.h; sourceTree = "<group>"; };
+		DD46171D2136C39900935F06 /* BNBRNDModelEyeSegmentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBRNDModelEyeSegmentation.m; sourceTree = "<group>"; };
+		DD4617202136D6FB00935F06 /* BNBColorPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNBColorPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5BB4A621352E4D0058743A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2977DC8234649A70004CBF5 /* AWSCore.framework in Frameworks */,
+				D2977DC4234649950004CBF5 /* AWSPinpoint.framework in Frameworks */,
+				D2D42DF6231D60BE00538A69 /* BanubaEffectPlayer.framework in Frameworks */,
+				D2D42DF7231D611A00538A69 /* BanubaEffectPlayer.framework in Frameworks */,
+				A1A6062E22C8D0EA00A77B9A /* opencv2.framework in Frameworks */,
+				A1DBB21122C3AC3C00E9B175 /* frxframework3.framework in Frameworks */,
+				A1DBB20D22C3AC3000E9B175 /* BanubaSdk.framework in Frameworks */,
+				DE053CC25CB03444C85DAB96 /* Pods_TechDemo.framework in Frameworks */,
+				7BBCEDAD23E1C628009335C4 /* frx_neural.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D36FBA5215D16AC00D6A004 /* Background_Separation_Low */ = {
+			isa = PBXGroup;
+			children = (
+				4D36FBA6215D16AC00D6A004 /* BNBTechnology_Background_Low_CoreML.mm */,
+				4D36FBA7215D16AC00D6A004 /* BNBTechnology_Background_Low_CoreML.h */,
+			);
+			path = Background_Separation_Low;
+			sourceTree = "<group>";
+		};
+		4D65ED2A21E49C84008336CC /* Lips_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				4DA0405922256A8500EDFA00 /* BNBTechnology_Lips_CoreML.h */,
+				4DA0405A22256A8500EDFA00 /* BNBTechnology_Lips_CoreML.mm */,
+			);
+			path = Lips_Segmentation;
+			sourceTree = "<group>";
+		};
+		4DAEF3A021E60E460026FB09 /* Eyes_New_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEF3A121E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.h */,
+				4DAEF3A221E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.mm */,
+				7BF264C422648BD60001ACF6 /* BNBTechnology_Eyes_Wrapper.h */,
+				7BF264C522648BE60001ACF6 /* BNBTechnology_Eyes_Wrapper.mm */,
+			);
+			path = Eyes_New_Segmentation;
+			sourceTree = "<group>";
+		};
+		4DB2B2D0216C9977000955F6 /* Skin_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				4DB2B2D1216C9977000955F6 /* BNBTechnology_Skin_CoreML.h */,
+				4DB2B2D2216C9977000955F6 /* BNBTechnology_Skin_CoreML.mm */,
+			);
+			path = Skin_Segmentation;
+			sourceTree = "<group>";
+		};
+		4DBF2728237C09E000CE7039 /* Hands_Pekar */ = {
+			isa = PBXGroup;
+			children = (
+				4DBF2729237C09E000CE7039 /* BNBTechnology_Hands_Pekar_CoreML.h */,
+				4DBF272A237C09E000CE7039 /* BNBTechnology_Hands_Pekar_CoreML.mm */,
+				4DBF272E237C0E7600CE7039 /* Hands_Skeleton */,
+			);
+			path = Hands_Pekar;
+			sourceTree = "<group>";
+		};
+		4DBF272E237C0E7600CE7039 /* Hands_Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				4DBF2732237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.h */,
+				4DBF272F237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.mm */,
+				4DBF2730237C0E7600CE7039 /* BNBTechnology_Hands_SSD.mm */,
+				4DBF2731237C0E7600CE7039 /* BNBTechnology_Hands_SSD.h */,
+			);
+			path = Hands_Skeleton;
+			sourceTree = "<group>";
+		};
+		7B2F29D622DDFFBB008EEB07 /* Glasses_Camera */ = {
+			isa = PBXGroup;
+			children = (
+				7B2F29D822DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.h */,
+				7B2F29D722DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.mm */,
+			);
+			name = Glasses_Camera;
+			sourceTree = "<group>";
+		};
+		7B686267223BAB5A00134961 /* Eyes_Distance */ = {
+			isa = PBXGroup;
+			children = (
+				7B686269223BAB6B00134961 /* BNBTechnology_EyesDistance.h */,
+				7B68626A223BAB6B00134961 /* BNBTechnology_EyesDistance.mm */,
+			);
+			name = Eyes_Distance;
+			sourceTree = "<group>";
+		};
+		7BE8DCF42146A15C006B96CB /* Body_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				7B3D8A6B2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.h */,
+				7B3D8A6C2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.mm */,
+			);
+			name = Body_Segmentation;
+			sourceTree = "<group>";
+		};
+		A1DBB1C222C3A51800E9B175 /* BanubaSdk */ = {
+			isa = PBXGroup;
+			children = (
+				A1DBB1C322C3A51800E9B175 /* BanubaSdk.xcodeproj */,
+			);
+			name = BanubaSdk;
+			path = External/BanubaSdk;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1DBB1C422C3A51800E9B175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DBB1E622C3A51800E9B175 /* BanubaSdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC85030221904A3E007E76E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC85030F21907FEA007E76E4 /* GetInTouchCell.swift */,
+				AC85030321904A69007E76E4 /* GetInTouchHeaderCell.swift */,
+				AC85030521904A7E007E76E4 /* GetInTouchEmailCell.swift */,
+				AC85030721904A93007E76E4 /* GetInTouchTextCell.swift */,
+				AC850309219078B1007E76E4 /* GetInTouchGDPRCell.swift */,
+				AC85030B219078C5007E76E4 /* GetInTouchSubmitButtonCell.swift */,
+				AC85030D21907995007E76E4 /* GetInTouchLabelCell.swift */,
+				AC85031121908A9B007E76E4 /* GetInTouchFooterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AC94C8A521889C7D00C65952 /* BNBSettingsWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC94C8AC21889E2200C65952 /* BNBSettingsWebViewController.h */,
+				AC94C8AD21889E2200C65952 /* BNBSettingsWebViewController.m */,
+				AC94C8AE21889E2200C65952 /* BNBSettingsWebViewController.xib */,
+			);
+			path = BNBSettingsWebViewController;
+			sourceTree = "<group>";
+		};
+		AC9EF7AE2163671B00BAA461 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AC9EF7B02163673E00BAA461 /* PinpointManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		CE507C6A2137D7020013CD84 /* ColorPickerCells */ = {
+			isa = PBXGroup;
+			children = (
+				DD4617202136D6FB00935F06 /* BNBColorPickerCollectionViewCell.swift */,
+			);
+			path = ColorPickerCells;
+			sourceTree = "<group>";
+		};
+		CE507CE0213D11CC0013CD84 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CE507CE1213D11E10013CD84 /* BNBSDKViewController.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		CE5607A7213D1ACC00ADF595 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CE5BB4A021352E4D0058743A = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4AB21352E4D0058743A /* TechDemo */,
+				DD46163D2135CAF000935F06 /* Frameworks */,
+				CE5BB4AA21352E4D0058743A /* Products */,
+				CE5607A7213D1ACC00ADF595 /* Recovered References */,
+				E7D5F5A68254B875DD01CF89 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5BB4AA21352E4D0058743A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4A921352E4D0058743A /* TechDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5BB4AB21352E4D0058743A /* TechDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AC9EF7AE2163671B00BAA461 /* Analytics */,
+				DD46171F2136D3C100935F06 /* Components */,
+				CE5BB4E321359D490058743A /* TechBeahaviours */,
+				CE5BB4DD21358A3D0058743A /* Helpers */,
+				CE5BB4D5213585CD0058743A /* Models */,
+				CE5BB4C821354FF50058743A /* ViewControllers */,
+				CE5BB4C321354BE40058743A /* Style */,
+				CE5BB4BE21354B550058743A /* Controls */,
+				CE5BB4DA213587290058743A /* Resources */,
+				DD4615DB2135CA6700935F06 /* Technologies */,
+				CE5BB4AC21352E4D0058743A /* AppDelegate.swift */,
+				DD4615D72135C9EF00935F06 /* TechDemo-Bridging-Header.h */,
+				DD4616952135CFCB00935F06 /* frxframework3 */,
+				A1DBB1C222C3A51800E9B175 /* BanubaSdk */,
+				CE5BB4B321352E4E0058743A /* Assets.xcassets */,
+				AC388F1C213ECD260075589C /* art.scnassets */,
+				CE5BB4B521352E4E0058743A /* LaunchScreen.storyboard */,
+				CE5BB4B821352E4E0058743A /* Info.plist */,
+			);
+			path = TechDemo;
+			sourceTree = "<group>";
+		};
+		CE5BB4BE21354B550058743A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4D121355ECA0058743A /* BNBCollectionViewCell.swift */,
+				AC6FC48C214A9C1C00AD9287 /* BNBSlider.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		CE5BB4C321354BE40058743A /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4C421354BEE0058743A /* BNBStyle.swift */,
+				CE5BB4C621354DCB0058743A /* UIFont+Utils.swift */,
+				CE507CBE21380CE60013CD84 /* UIColor+Utils.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		CE5BB4C821354FF50058743A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC94C8A521889C7D00C65952 /* BNBSettingsWebViewController */,
+				CE7323CF21634E5E006B9FE0 /* AlertViewController */,
+				CE507CE0213D11CC0013CD84 /* SDK */,
+				CE5BB4F02135A66B0058743A /* RND */,
+				CE5BB4CD21355B2B0058743A /* TechNaviController */,
+				CE5BB4C9213550200058743A /* BNBViewController.swift */,
+				CE5BB4AE21352E4D0058743A /* BNBMainViewController.swift */,
+				CE7323FA2164AF41006B9FE0 /* BNBRegistrationViewController.swift */,
+				ACD6836C21493C9300ACD930 /* NoCameraAccessViewController.swift */,
+				ACD6836D21493C9300ACD930 /* NoCameraAccessViewController.xib */,
+				ACECA8B9217E18B800CEA0F0 /* GetInTouchViewController.swift */,
+				AC8502FF219047D6007E76E4 /* GetInTouchNativeViewController.swift */,
+				AC85030221904A3E007E76E4 /* Cells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE5BB4CD21355B2B0058743A /* TechNaviController */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4CB213550BF0058743A /* BNBTechNavigationViewController.swift */,
+				CE5BB4CE21355B3C0058743A /* Cells */,
+			);
+			path = TechNaviController;
+			sourceTree = "<group>";
+		};
+		CE5BB4CE21355B3C0058743A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4CF21355B570058743A /* BNBMainTechCollectionViewCell.swift */,
+				CE5BB4D3213568D50058743A /* BNBSubTechCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE5BB4D5213585CD0058743A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD4617122136975B00935F06 /* RND Model Data */,
+				CE5BB4D6213585EF0058743A /* BNBTechnology.swift */,
+				CE5BB4D8213585FF0058743A /* BNBTechFeature.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE5BB4DA213587290058743A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8E50A23795E3C009DDA7F /* client_token */,
+				ACB3A61B21414D39005EF13D /* effects */,
+				CE5BB4EC2135A5E80058743A /* RND.storyboard */,
+				CE507CE3213D12860013CD84 /* SDK.storyboard */,
+				CE5BB4B021352E4D0058743A /* Main.storyboard */,
+				CE7323F72164AF10006B9FE0 /* Registration.storyboard */,
+				CE5BB4DB213587710058743A /* Technologies.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE5BB4DD21358A3D0058743A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D27C408D223A946800C3386D /* BNBCameraHelper.h */,
+				D27C408E223A946800C3386D /* BNBCameraHelper.m */,
+				CE5BB4F32135A8150058743A /* UIView+Utils.swift */,
+				CE5BB4EA2135A16E0058743A /* BNBCamera.swift */,
+				CE5BB4DE21358A4E0058743A /* BNBTechExractorHelper.swift */,
+				CE5BB4F12135A6BF0058743A /* Storyboard+Utils.swift */,
+				CE56E73E215396CD003D521C /* BNBApplicationConfig.h */,
+				CE56E73F215396CD003D521C /* BNBApplicationConfig.m */,
+				CE56E7412153C8A0003D521C /* BNBApplicationConfigUpdater.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE5BB4E321359D490058743A /* TechBeahaviours */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4E421359D570058743A /* BNBTechnologyBehaviour.swift */,
+				CE5BB4E621359D8A0058743A /* BNBTechnologyRNDBehaviour.swift */,
+				CE5607B6213D398100ADF595 /* BNBTechnologySDKBehaviour.swift */,
+				CE507CDE213D11620013CD84 /* BNBTechnologySDKExpirienceBehaviour.swift */,
+				CE5607B8213D39BC00ADF595 /* BNBTechnologySDKFeaturesBehaviour.swift */,
+				DD4615D82135C9EF00935F06 /* BNBRNDTechnologiesHolder.h */,
+				DD4615D92135C9EF00935F06 /* BNBRNDTechnologiesHolder.mm */,
+				CE80157F213E6D9300F69EA0 /* BNBSDKTechnologiesHolder.swift */,
+				CE5607B2213D370100ADF595 /* BNBSDKExpirienceTechnologiesHolder.swift */,
+				CE5607B4213D371400ADF595 /* BNBSDKFeaturesTechnologiesHolder.swift */,
+			);
+			path = TechBeahaviours;
+			sourceTree = "<group>";
+		};
+		CE5BB4F02135A66B0058743A /* RND */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BB4EE2135A6590058743A /* BNBRNDViewController.swift */,
+				AC6FC485214A528B00AD9287 /* BNBRNDLandmarksViewController.swift */,
+				DD4617162136A13900935F06 /* BNBRNDFeatureViewController.swift */,
+				DD4617182136A3BB00935F06 /* BNBRNDFeatureSkinAndHairColorViewController.swift */,
+				CE507CB0213804970013CD84 /* BNBRNDColorPickerViewController.swift */,
+				DD46171A2136C37700935F06 /* BNBRNDEyeSegmentationViewController.swift */,
+				CE507C892137EF4F0013CD84 /* BNBRNDHairSegmentationViewController.swift */,
+				CE507CA12137FD7C0013CD84 /* BNBRNDDistanceViewController.swift */,
+				CE507CB7213808460013CD84 /* BNBRNDGlassesViewController.swift */,
+				CE507CC0213815970013CD84 /* BNBRNDBeardAndMustacheViewController.swift */,
+				CE507CC821381D2D0013CD84 /* BNBRNDGenderViewController.swift */,
+				CE507CCA2138237D0013CD84 /* BNBRNDAgeViewController.swift */,
+				CE507CCE2138249D0013CD84 /* BNBRNDRaceViewController.swift */,
+				CE507CD321382E940013CD84 /* BNBRNDOcclusionViewController.swift */,
+				CE507CD521383EE20013CD84 /* BNBRNDHandViewController.swift */,
+				CE507CD7213920EF0013CD84 /* BNBRNDPulseViewController.swift */,
+				AC388F1E213ECFC80075589C /* BNBRNDActionUnitsViewController.swift */,
+				ACB3A61F2146A858005EF13D /* BNBRNDBackgroundViewController.swift */,
+				AC6FC487214A618500AD9287 /* BNBRNDBodySegmentationViewController.swift */,
+				D27C4091223A9D2100C3386D /* BNBEyeDistanceViewController.swift */,
+				D25CF01F223FB2D000BA8C83 /* LipsSegmentationViewController.swift */,
+				D207A36722562D2200FC8669 /* BNBRNDSkinSegmentationViewController.swift */,
+				D25EF09922DDEFC30002EDA4 /* BNBGlassesCameraViewController.swift */,
+				D245247323853EB0006F9127 /* BNBRNDHandsTrackingViewController.swift */,
+			);
+			path = RND;
+			sourceTree = "<group>";
+		};
+		CE7323CF21634E5E006B9FE0 /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE7323D121634E87006B9FE0 /* BNBAlertViewController.swift */,
+				CE7323D221634E87006B9FE0 /* BNBAlertViewController.xib */,
+			);
+			path = AlertViewController;
+			sourceTree = "<group>";
+		};
+		DD4615DB2135CA6700935F06 /* Technologies */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615DC2135CA6700935F06 /* RND */,
+			);
+			path = Technologies;
+			sourceTree = "<group>";
+		};
+		DD4615DC2135CA6700935F06 /* RND */ = {
+			isa = PBXGroup;
+			children = (
+				7B686267223BAB5A00134961 /* Eyes_Distance */,
+				DD4616BC2135E8EA00935F06 /* OpenCV */,
+				DD4616482135CBFD00935F06 /* CoreML */,
+				DD4616462135CBBC00935F06 /* FRXData */,
+				DD4616402135CB4400935F06 /* Contours */,
+				DD4615DD2135CA8F00935F06 /* Technologies */,
+			);
+			path = RND;
+			sourceTree = "<group>";
+		};
+		DD4615DD2135CA8F00935F06 /* Technologies */ = {
+			isa = PBXGroup;
+			children = (
+				4DBF2728237C09E000CE7039 /* Hands_Pekar */,
+				7B2F29D622DDFFBB008EEB07 /* Glasses_Camera */,
+				4DAEF3A021E60E460026FB09 /* Eyes_New_Segmentation */,
+				4D65ED2A21E49C84008336CC /* Lips_Segmentation */,
+				4DB2B2D0216C9977000955F6 /* Skin_Segmentation */,
+				4D36FBA5215D16AC00D6A004 /* Background_Separation_Low */,
+				DD4615EA2135CA9000935F06 /* BNBTechnology_Utils.h */,
+				7BF264BD225DEF620001ACF6 /* BNBTechnology_Math.h */,
+				DD4615FE2135CA9000935F06 /* BNBTechnologies_Demo.h */,
+				DD46160E2135CA9000935F06 /* BNBTechnology_Execute.h */,
+				7BE8DCF42146A15C006B96CB /* Body_Segmentation */,
+				DD4615F92135CA9000935F06 /* Action_Units */,
+				DD4615DE2135CA8F00935F06 /* Glasses_Detection */,
+				DD4615E12135CA8F00935F06 /* OpenCV_Face_Detection */,
+				DD4615E42135CA9000935F06 /* Multi_Style_Transfer */,
+				DD4615E72135CA9000935F06 /* Face_Recognition */,
+				DD4615EB2135CA9000935F06 /* Background_Separation */,
+				DD4615EE2135CA9000935F06 /* Hair_Segmentation */,
+				DD4615F32135CA9000935F06 /* Hair_Scin_Colors */,
+				DD4615F62135CA9000935F06 /* Hands_Segmentation */,
+				DD4615FF2135CA9000935F06 /* Occlusion */,
+				DD4616022135CA9000935F06 /* FRX */,
+				DD4616052135CA9000935F06 /* Pulse_Detection */,
+				DD4616092135CA9000935F06 /* Beard_Moustache_Detection */,
+				DD46160B2135CA9000935F06 /* Race_Detection */,
+				DD46160F2135CA9000935F06 /* Ruler */,
+				DD4616122135CA9000935F06 /* Age_Gender_Detection */,
+				DD4616152135CA9000935F06 /* Style_Transfer */,
+				DD46161A2135CA9000935F06 /* Personality_Classification */,
+				DD46161D2135CA9000935F06 /* Age_Detection */,
+				DD4616202135CA9000935F06 /* Eyes_Segmentation */,
+				DD4616232135CA9000935F06 /* Eye_Gaze */,
+			);
+			path = Technologies;
+			sourceTree = "<group>";
+		};
+		DD4615DE2135CA8F00935F06 /* Glasses_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615DF2135CA8F00935F06 /* BNBTechnology_Glasses_CoreML.mm */,
+				DD4615E02135CA8F00935F06 /* BNBTechnology_Glasses_CoreML.h */,
+			);
+			path = Glasses_Detection;
+			sourceTree = "<group>";
+		};
+		DD4615E12135CA8F00935F06 /* OpenCV_Face_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615E22135CA9000935F06 /* BNBTechnology_OpenCV_Face.mm */,
+				DD4615E32135CA9000935F06 /* BNBTechnology_OpenCV_Face.h */,
+			);
+			path = OpenCV_Face_Detection;
+			sourceTree = "<group>";
+		};
+		DD4615E42135CA9000935F06 /* Multi_Style_Transfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Multi_Style_Transfer;
+			sourceTree = "<group>";
+		};
+		DD4615E72135CA9000935F06 /* Face_Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615E82135CA9000935F06 /* BNBTechnology_Face_Recognition.h */,
+				DD4615E92135CA9000935F06 /* BNBTechnology_Face_Recognition.mm */,
+			);
+			path = Face_Recognition;
+			sourceTree = "<group>";
+		};
+		DD4615EB2135CA9000935F06 /* Background_Separation */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615EC2135CA9000935F06 /* BNBTechnology_Background_CoreML.mm */,
+				DD4615ED2135CA9000935F06 /* BNBTechnology_Background_CoreML.h */,
+			);
+			path = Background_Separation;
+			sourceTree = "<group>";
+		};
+		DD4615EE2135CA9000935F06 /* Hair_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				7B3D8A712146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.h */,
+				7B3D8A722146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.mm */,
+				DD4615F02135CA9000935F06 /* BNBTechnology_Hair_CoreML.mm */,
+				DD4615F12135CA9000935F06 /* BNBTechnology_Hair_CoreML.h */,
+			);
+			path = Hair_Segmentation;
+			sourceTree = "<group>";
+		};
+		DD4615F32135CA9000935F06 /* Hair_Scin_Colors */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615F42135CA9000935F06 /* BNBTechnology_HairScin_Colors.h */,
+				DD4615F52135CA9000935F06 /* BNBTechnology_HairScin_Colors.mm */,
+			);
+			path = Hair_Scin_Colors;
+			sourceTree = "<group>";
+		};
+		DD4615F62135CA9000935F06 /* Hands_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				DD4615F72135CA9000935F06 /* BNBTechnology_Hands_CoreML.mm */,
+				DD4615F82135CA9000935F06 /* BNBTechnology_Hands_CoreML.h */,
+			);
+			path = Hands_Segmentation;
+			sourceTree = "<group>";
+		};
+		DD4615F92135CA9000935F06 /* Action_Units */ = {
+			isa = PBXGroup;
+			children = (
+				AC388F19213ECCA90075589C /* BNBTechnology_Action_Units.h */,
+				AC388F17213ECCA90075589C /* BNBTechnology_Action_Units.mm */,
+				AC388F16213ECCA80075589C /* FRXBlendshapeAdapter.h */,
+				AC388F18213ECCA90075589C /* FRXBlendshapeAdapter.mm */,
+			);
+			path = Action_Units;
+			sourceTree = "<group>";
+		};
+		DD4615FF2135CA9000935F06 /* Occlusion */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616002135CA9000935F06 /* BNBTechnology_OcclusionBase_CoreML.h */,
+				DD4616012135CA9000935F06 /* BNBTechnology_Occlusion_CoreML.mm */,
+			);
+			path = Occlusion;
+			sourceTree = "<group>";
+		};
+		DD4616022135CA9000935F06 /* FRX */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616032135CA9000935F06 /* BNBTechnology_FRX.mm */,
+				DD4616042135CA9000935F06 /* BNBTechnology_FRX.h */,
+			);
+			path = FRX;
+			sourceTree = "<group>";
+		};
+		DD4616052135CA9000935F06 /* Pulse_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616062135CA9000935F06 /* BNBTechnology_Pulse.mm */,
+				DD4616072135CA9000935F06 /* BNBTechnology_Pulse.h */,
+				DD4616082135CA9000935F06 /* BNBTechnology_Pulse_Base.h */,
+			);
+			path = Pulse_Detection;
+			sourceTree = "<group>";
+		};
+		DD4616092135CA9000935F06 /* Beard_Moustache_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD46160A2135CA9000935F06 /* BNBTechnology_Beard_Moustache_CoreML.h */,
+			);
+			path = Beard_Moustache_Detection;
+			sourceTree = "<group>";
+		};
+		DD46160B2135CA9000935F06 /* Race_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD46160C2135CA9000935F06 /* BNBTechnology_Race_CoreML.mm */,
+				DD46160D2135CA9000935F06 /* BNBTechnology_Race_CoreML.h */,
+			);
+			path = Race_Detection;
+			sourceTree = "<group>";
+		};
+		DD46160F2135CA9000935F06 /* Ruler */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616102135CA9000935F06 /* BNBTechnology_Ruler.h */,
+				DD4616112135CA9000935F06 /* BNBTechnology_Ruler.mm */,
+			);
+			path = Ruler;
+			sourceTree = "<group>";
+		};
+		DD4616122135CA9000935F06 /* Age_Gender_Detection */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616132135CA9000935F06 /* BNBTechnology_AgeGender_CoreML.h */,
+				DD4616142135CA9000935F06 /* BNBTechnology_AgeGender_CoreML.mm */,
+			);
+			path = Age_Gender_Detection;
+			sourceTree = "<group>";
+		};
+		DD4616152135CA9000935F06 /* Style_Transfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style_Transfer;
+			sourceTree = "<group>";
+		};
+		DD46161A2135CA9000935F06 /* Personality_Classification */ = {
+			isa = PBXGroup;
+			children = (
+				DD46161B2135CA9000935F06 /* BNBTechnology_Personality_CoreML.h */,
+				DD46161C2135CA9000935F06 /* BNBTechnology_Personality_CoreML.mm */,
+			);
+			path = Personality_Classification;
+			sourceTree = "<group>";
+		};
+		DD46161D2135CA9000935F06 /* Age_Detection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Age_Detection;
+			sourceTree = "<group>";
+		};
+		DD4616202135CA9000935F06 /* Eyes_Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616212135CA9000935F06 /* BNBTechnology_Eyes_CoreML.mm */,
+				DD4616222135CA9000935F06 /* BNBTechnology_Eyes_CoreML.h */,
+			);
+			path = Eyes_Segmentation;
+			sourceTree = "<group>";
+		};
+		DD4616232135CA9000935F06 /* Eye_Gaze */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616242135CA9000935F06 /* BNBTechnology_EyeGaze.mm */,
+				DD4616252135CA9000935F06 /* BNBTechnology_EyeGaze.h */,
+			);
+			path = Eye_Gaze;
+			sourceTree = "<group>";
+		};
+		DD46163D2135CAF000935F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBCEDAB23E1C628009335C4 /* frx_neural.framework */,
+				D2977DC7234649A70004CBF5 /* AWSCore.framework */,
+				D2977DC3234649950004CBF5 /* AWSPinpoint.framework */,
+				D2D42DF5231D60BE00538A69 /* BanubaEffectPlayer.framework */,
+				A1A6062D22C8D0EA00A77B9A /* opencv2.framework */,
+				15F97C5BB42C8F4D26A1A119 /* Pods_TechDemo.framework */,
+			);
+			name = Frameworks;
+			path = TechDemo;
+			sourceTree = "<group>";
+		};
+		DD4616402135CB4400935F06 /* Contours */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616412135CB4400935F06 /* Contours.hpp */,
+				DD4616422135CB4400935F06 /* Contours.cpp */,
+				DD4616432135CB4400935F06 /* HeadContours.bin */,
+			);
+			path = Contours;
+			sourceTree = "<group>";
+		};
+		DD4616462135CBBC00935F06 /* FRXData */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616472135CBBC00935F06 /* FRXDataStruct.h */,
+			);
+			path = FRXData;
+			sourceTree = "<group>";
+		};
+		DD4616482135CBFD00935F06 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616A72135D29F00935F06 /* Test */,
+				DD4616552135CBFD00935F06 /* coreMLHair_64x48.mlmodel */,
+				DD4616562135CBFD00935F06 /* coreMLHair_128x96.mlmodel */,
+				4D0C850C21870FC90094BFD0 /* coreMLHair_256x144_7907.mlmodel */,
+				4DA0404822243B3400EDFA00 /* coreMLHair_336x192.mlmodel */,
+				DD4616492135CBFD00935F06 /* coreMLHair_640x480.mlmodel */,
+				DD4616582135CBFD00935F06 /* coreMLBackground.mlmodel */,
+				4D36FBAA215D172F00D6A004 /* coreMLBackgroundLow.mlmodel */,
+				DD46165E2135CBFD00935F06 /* coreMLEyes.mlmodel */,
+				4DAEF39D21E60E270026FB09 /* coreMLEyes_New.mlmodel */,
+				DD46164C2135CBFD00935F06 /* coreMLAge.mlmodel */,
+				DD46164A2135CBFD00935F06 /* coreMLGender.mlmodel */,
+				4DED956B2380022400FA303D /* coreMLHandsSSD.mlmodel */,
+				7B3D8A6E2146A1D6008C00C8 /* coreMLBodySegmentation.mlmodel */,
+				4D27DBEC216371570007DB25 /* coreMLHands.mlmodel */,
+				4DBF2737237C107400CE7039 /* coreMLHandsModelSK.mlmodel */,
+				DD4616572135CBFD00935F06 /* coreMLRace.mlmodel */,
+				4DB2B2D5216C99AC000955F6 /* coreMLSkin.mlmodel */,
+				4DA040562225683B00EDFA00 /* coreMLLips.mlmodel */,
+				4DBF272C237C0CB600CE7039 /* coreMLHandsPekarMessendger.mlmodel */,
+				DD46165A2135CBFD00935F06 /* coreMLFaceBeard.mlmodel */,
+				DD46165B2135CBFD00935F06 /* coreMLOcclusion.mlmodel */,
+				DD46165D2135CBFD00935F06 /* coreMLPersonality.mlmodel */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		DD4616952135CFCB00935F06 /* frxframework3 */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616992135CFCB00935F06 /* frxframework3.xcodeproj */,
+			);
+			path = frxframework3;
+			sourceTree = SOURCE_ROOT;
+		};
+		DD46169A2135CFCB00935F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD46169E2135CFCB00935F06 /* frxframework3.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4616A72135D29F00935F06 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DD46170D213694FC00935F06 /* coreMLAgeBegeza.mlmodel */,
+			);
+			name = Test;
+			path = "../../../../../../banuba-demo/banuba.demo/Resources/CoreML/Test";
+			sourceTree = "<group>";
+		};
+		DD4616BC2135E8EA00935F06 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				DD4616BD2135E8EA00935F06 /* haarcascade_frontalface_alt.xml */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		DD4617122136975B00935F06 /* RND Model Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD46170F2136967600935F06 /* BNBRNDModelData.h */,
+				DD4617102136967600935F06 /* BNBRNDModelData.m */,
+				DD4617132136978900935F06 /* BNBRNDModelDataSkinAndHairColor.h */,
+				DD4617142136978900935F06 /* BNBRNDModelDataSkinAndHairColor.m */,
+				DD46171C2136C39900935F06 /* BNBRNDModelEyeSegmentation.h */,
+				DD46171D2136C39900935F06 /* BNBRNDModelEyeSegmentation.m */,
+				CE507C8B2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.h */,
+				CE507C8C2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.m */,
+				CE507CB42138065B0013CD84 /* BNBRNDModelDataDistance.h */,
+				CE507CB52138065B0013CD84 /* BNBRNDModelDataDistance.m */,
+				CE507CBB2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.h */,
+				CE507CBC2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.m */,
+				CE507CC2213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.h */,
+				CE507CC3213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.m */,
+				CE507CC521381D0C0013CD84 /* BNBRNDModelGenderAndAge.h */,
+				CE507CC621381D0C0013CD84 /* BNBRNDModelGenderAndAge.m */,
+				CE507CD0213824CA0013CD84 /* BNBRNDModeDataRace.h */,
+				CE507CD1213824CA0013CD84 /* BNBRNDModeDataRace.m */,
+				CE507CD92139404A0013CD84 /* BNBRNDModelDataPulse.h */,
+				CE507CDA2139404A0013CD84 /* BNBRNDModelDataPulse.m */,
+				AC388F20213ED0FB0075589C /* BNBRNDModelDataActionUnits.h */,
+				AC388F21213ED0FB0075589C /* BNBRNDModelDataActionUnits.m */,
+				ACB3A6212146AAA5005EF13D /* BNBRNDModelDataBackground.h */,
+				ACB3A6222146AAA5005EF13D /* BNBRNDModelDataBackground.m */,
+				CE7323D521635A49006B9FE0 /* BNBRNDModelDataOcclusion.h */,
+				CE7323D621635A49006B9FE0 /* BNBRNDModelDataOcclusion.m */,
+				CE7323DB21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.h */,
+				CE7323DC21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.m */,
+				CE7323D821635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.h */,
+				CE7323D921635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.m */,
+				CE7323DE216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.h */,
+				CE7323DF216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.m */,
+				7B68626E223BAE4E00134961 /* BNBRNDModelDataEyesDistance.h */,
+				7B686270223BAE6100134961 /* BNBRNDModelDataEyesDistance.m */,
+				D25CF022223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.h */,
+				D25CF023223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.m */,
+				D25EF09F22DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.h */,
+				D25EF0A022DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.m */,
+				4DBF2723237C05D300CE7039 /* BNBRNDModelDataHandSkeleton.h */,
+				4DBF2721237C05A600CE7039 /* BNBRNDModelDataHandSkeleton.m */,
+			);
+			path = "RND Model Data";
+			sourceTree = "<group>";
+		};
+		DD46171F2136D3C100935F06 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE507C6A2137D7020013CD84 /* ColorPickerCells */,
+				CE56E73921538DB0003D521C /* BNBShadowLabel.swift */,
+				2EEBBD232166043000B1275A /* TextFieldWithInset.swift */,
+				ACECA8BC217F4A1E00CEA0F0 /* TextViewWithPlaceholder.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E7D5F5A68254B875DD01CF89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0121FD148B6EB557C655BB58 /* Pods-TechDemo.debug.xcconfig */,
+				D6C4007542483AA626A10CF5 /* Pods-TechDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5BB4A821352E4D0058743A /* TechDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5BB4BB21352E4E0058743A /* Build configuration list for PBXNativeTarget "TechDemo" */;
+			buildPhases = (
+				311F78ACD3E2526262D1F129 /* [CP] Check Pods Manifest.lock */,
+				CE5BB4A521352E4D0058743A /* Sources */,
+				CE5BB4A621352E4D0058743A /* Frameworks */,
+				CE5BB4A721352E4D0058743A /* Resources */,
+				A1DBB20222C3A63000E9B175 /* Embed Frameworks */,
+<<<<<<< .merge_file_rWb819
+				D216C5F7237D72C8006704FC /* Split Fat Libs */,
+=======
+				D245247B238EC2A4006F9127 /* Split fat libs */,
+>>>>>>> .merge_file_Rl08rS
+				CCA9971170B21FC4355D4949 /* [CP] Embed Pods Frameworks */,
+				256B66EFF7C6A4A02FF0CD09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C36DF3237AEE9800CC2E88 /* PBXTargetDependency */,
+			);
+			name = TechDemo;
+			productName = TechDemo;
+			productReference = CE5BB4A921352E4D0058743A /* TechDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5BB4A121352E4D0058743A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Banuba;
+				TargetAttributes = {
+					CE5BB4A821352E4D0058743A = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = CE5BB4A421352E4D0058743A /* Build configuration list for PBXProject "TechDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE5BB4A021352E4D0058743A;
+			productRefGroup = CE5BB4AA21352E4D0058743A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A1DBB1C422C3A51800E9B175 /* Products */;
+					ProjectRef = A1DBB1C322C3A51800E9B175 /* BanubaSdk.xcodeproj */;
+				},
+				{
+					ProductGroup = DD46169A2135CFCB00935F06 /* Products */;
+					ProjectRef = DD4616992135CFCB00935F06 /* frxframework3.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CE5BB4A821352E4D0058743A /* TechDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A1DBB1E622C3A51800E9B175 /* BanubaSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BanubaSdk.framework;
+			remoteRef = A1DBB1E522C3A51800E9B175 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD46169E2135CFCB00935F06 /* frxframework3.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = frxframework3.framework;
+			remoteRef = DD46169D2135CFCB00935F06 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5BB4A721352E4D0058743A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE507CE4213D12860013CD84 /* SDK.storyboard in Resources */,
+				A1F8E50D23795E3C009DDA7F /* client_token in Resources */,
+				AC94C8B021889E2200C65952 /* BNBSettingsWebViewController.xib in Resources */,
+				CE7323F82164AF10006B9FE0 /* Registration.storyboard in Resources */,
+				CE5BB4B721352E4E0058743A /* LaunchScreen.storyboard in Resources */,
+				AC388F1D213ECD270075589C /* art.scnassets in Resources */,
+				CE5BB4B421352E4E0058743A /* Assets.xcassets in Resources */,
+				CE5BB4ED2135A5E80058743A /* RND.storyboard in Resources */,
+				DD4616BE2135E8EA00935F06 /* haarcascade_frontalface_alt.xml in Resources */,
+				ACD6836F21493C9300ACD930 /* NoCameraAccessViewController.xib in Resources */,
+				DD4616452135CB4400935F06 /* HeadContours.bin in Resources */,
+				ACB3A61C21414D39005EF13D /* effects in Resources */,
+				CE5BB4B221352E4D0058743A /* Main.storyboard in Resources */,
+				CE7323D421634E87006B9FE0 /* BNBAlertViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		256B66EFF7C6A4A02FF0CD09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HockeySDK/HockeySDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		311F78ACD3E2526262D1F129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA9971170B21FC4355D4949 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechDemo/Pods-TechDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+<<<<<<< .merge_file_rWb819
+		D216C5F7237D72C8006704FC /* Split Fat Libs */ = {
+=======
+		D245247B238EC2A4006F9127 /* Split fat libs */ = {
+>>>>>>> .merge_file_Rl08rS
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+<<<<<<< .merge_file_rWb819
+			name = "Split Fat Libs";
+=======
+			name = "Split fat libs";
+>>>>>>> .merge_file_Rl08rS
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+<<<<<<< .merge_file_rWb819
+			shellScript = "#!/usr/bin/env bash\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n\n    if [ ! -f \"${FRAMEWORK_EXECUTABLE_PATH}\" ]; then\n        continue\n    fi\n\n    if xcrun lipo -info \"${FRAMEWORK_EXECUTABLE_PATH}\" | grep --silent \"Non-fat\"; then\n        echo \"Framework non-fat, skipping: $FRAMEWORK_EXECUTABLE_NAME\"\n        continue\n    fi\n\n    echo \"Thinning framework $FRAMEWORK_EXECUTABLE_NAME\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        xcrun lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    xcrun lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
+=======
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/usr/bin/env bash\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n\nif [ ! -f \"${FRAMEWORK_EXECUTABLE_PATH}\" ]; then\ncontinue\nfi\n\nif xcrun lipo -info \"${FRAMEWORK_EXECUTABLE_PATH}\" | grep --silent \"Non-fat\"; then\necho \"Framework non-fat, skipping: $FRAMEWORK_EXECUTABLE_NAME\"\ncontinue\nfi\n\necho \"Thinning framework $FRAMEWORK_EXECUTABLE_NAME\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nxcrun lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nxcrun lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
+>>>>>>> .merge_file_Rl08rS
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5BB4A521352E4D0058743A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE507CD8213920EF0013CD84 /* BNBRNDPulseViewController.swift in Sources */,
+				AC388F22213ED0FB0075589C /* BNBRNDModelDataActionUnits.m in Sources */,
+				CE507CA22137FD7C0013CD84 /* BNBRNDDistanceViewController.swift in Sources */,
+				CE507CCB2138237D0013CD84 /* BNBRNDAgeViewController.swift in Sources */,
+				4DAEF3A321E60E6E0026FB09 /* BNBTechnology_Eyes_New_CoreML.mm in Sources */,
+				CE7323DA21635E8B006B9FE0 /* BNBRNDModelDataBodySegmentation.m in Sources */,
+				CE7323E0216362F0006B9FE0 /* BNBRNDModelDataHandSegmentation.m in Sources */,
+				CE507CB8213808460013CD84 /* BNBRNDGlassesViewController.swift in Sources */,
+				DD4616722135CBFD00935F06 /* coreMLEyes.mlmodel in Sources */,
+				DD4615DA2135C9EF00935F06 /* BNBRNDTechnologiesHolder.mm in Sources */,
+				7B686271223BAE6100134961 /* BNBRNDModelDataEyesDistance.m in Sources */,
+				7B3D8A732146A3D7008C00C8 /* BNBTechnology_Wrapper_Segmentation.mm in Sources */,
+				CE5BB4D021355B570058743A /* BNBMainTechCollectionViewCell.swift in Sources */,
+				DD4616712135CBFD00935F06 /* coreMLPersonality.mlmodel in Sources */,
+				4D36FBA9215D16AD00D6A004 /* BNBTechnology_Background_Low_CoreML.mm in Sources */,
+				DD4616332135CA9000935F06 /* BNBTechnology_Pulse.mm in Sources */,
+				7BF264C622648BE60001ACF6 /* BNBTechnology_Eyes_Wrapper.mm in Sources */,
+				AC85030A219078B1007E76E4 /* GetInTouchGDPRCell.swift in Sources */,
+				CE5BB4D4213568D50058743A /* BNBSubTechCollectionViewCell.swift in Sources */,
+				CE5607B3213D370100ADF595 /* BNBSDKExpirienceTechnologiesHolder.swift in Sources */,
+				ACB3A6232146AAA5005EF13D /* BNBRNDModelDataBackground.m in Sources */,
+				DD46171B2136C37700935F06 /* BNBRNDEyeSegmentationViewController.swift in Sources */,
+				CE7323FB2164AF41006B9FE0 /* BNBRegistrationViewController.swift in Sources */,
+				D25EF09A22DDEFC30002EDA4 /* BNBGlassesCameraViewController.swift in Sources */,
+				AC85030421904A69007E76E4 /* GetInTouchHeaderCell.swift in Sources */,
+				AC6FC48D214A9C1C00AD9287 /* BNBSlider.swift in Sources */,
+				AC388F1B213ECCA90075589C /* FRXBlendshapeAdapter.mm in Sources */,
+				DD4616442135CB4400935F06 /* Contours.cpp in Sources */,
+				CE5BB4E721359D8A0058743A /* BNBTechnologyRNDBehaviour.swift in Sources */,
+				CE507CD621383EE20013CD84 /* BNBRNDHandViewController.swift in Sources */,
+				CE507C8D2137F0500013CD84 /* BNBRNDModelDataHairSegmentation.m in Sources */,
+				AC850300219047D6007E76E4 /* GetInTouchNativeViewController.swift in Sources */,
+				CE5BB4D7213585EF0058743A /* BNBTechnology.swift in Sources */,
+				DD4616272135CA9000935F06 /* BNBTechnology_OpenCV_Face.mm in Sources */,
+				DD4617192136A3BB00935F06 /* BNBRNDFeatureSkinAndHairColorViewController.swift in Sources */,
+				4D0C850D21870FC90094BFD0 /* coreMLHair_256x144_7907.mlmodel in Sources */,
+				DD4616352135CA9000935F06 /* BNBTechnology_Ruler.mm in Sources */,
+				DD46166F2135CBFD00935F06 /* coreMLOcclusion.mlmodel in Sources */,
+				DD46162E2135CA9000935F06 /* BNBTechnology_Hands_CoreML.mm in Sources */,
+				4DB2B2D4216C9978000955F6 /* BNBTechnology_Skin_CoreML.mm in Sources */,
+				CE5BB4EB2135A16E0058743A /* BNBCamera.swift in Sources */,
+				CE507CC4213816E80013CD84 /* BNBRNDModelDataBeardsAndMustache.m in Sources */,
+				AC85030821904A93007E76E4 /* GetInTouchTextCell.swift in Sources */,
+				CE507CBD2138087F0013CD84 /* BNBRNDModelDataGlassesDetector.m in Sources */,
+				CE5607B5213D371400ADF595 /* BNBSDKFeaturesTechnologiesHolder.swift in Sources */,
+				CE5BB4AF21352E4D0058743A /* BNBMainViewController.swift in Sources */,
+				7B68626B223BAB6B00134961 /* BNBTechnology_EyesDistance.mm in Sources */,
+				CE507CC721381D0C0013CD84 /* BNBRNDModelGenderAndAge.m in Sources */,
+				4D36FBAB215D172F00D6A004 /* coreMLBackgroundLow.mlmodel in Sources */,
+				CE507CD421382E940013CD84 /* BNBRNDOcclusionViewController.swift in Sources */,
+				CE5607B9213D39BC00ADF595 /* BNBTechnologySDKFeaturesBehaviour.swift in Sources */,
+				D27C408F223A946800C3386D /* BNBCameraHelper.m in Sources */,
+				4DBF2733237C0E7600CE7039 /* BNBTechnology_Hands_Skeleton_CoreML.mm in Sources */,
+				4DBF272B237C09E100CE7039 /* BNBTechnology_Hands_Pekar_CoreML.mm in Sources */,
+				CE56E73A21538DB0003D521C /* BNBShadowLabel.swift in Sources */,
+				DD46166C2135CBFD00935F06 /* coreMLBackground.mlmodel in Sources */,
+				CE507CDF213D11620013CD84 /* BNBTechnologySDKExpirienceBehaviour.swift in Sources */,
+				D27C4092223A9D2100C3386D /* BNBEyeDistanceViewController.swift in Sources */,
+				AC388F1F213ECFC80075589C /* BNBRNDActionUnitsViewController.swift in Sources */,
+				DD46162A2135CA9000935F06 /* BNBTechnology_Background_CoreML.mm in Sources */,
+				AC6FC488214A618500AD9287 /* BNBRNDBodySegmentationViewController.swift in Sources */,
+				CE507CC1213815970013CD84 /* BNBRNDBeardAndMustacheViewController.swift in Sources */,
+				CE7323DD21635FB8006B9FE0 /* BNBRNDModelDataSegmentation.m in Sources */,
+				4DAEF39F21E60E280026FB09 /* coreMLEyes_New.mlmodel in Sources */,
+				CE5BB4F42135A8150058743A /* UIView+Utils.swift in Sources */,
+				D25EF0A122DE03B20002EDA4 /* BNBRNDModelDataGlassCamera.m in Sources */,
+				CE5BB4EF2135A6590058743A /* BNBRNDViewController.swift in Sources */,
+				DD4616262135CA9000935F06 /* BNBTechnology_Glasses_CoreML.mm in Sources */,
+				4DBF2734237C0E7600CE7039 /* BNBTechnology_Hands_SSD.mm in Sources */,
+				CE5BB4AD21352E4D0058743A /* AppDelegate.swift in Sources */,
+				AC85031221908A9B007E76E4 /* GetInTouchFooterCell.swift in Sources */,
+				DD46162B2135CA9000935F06 /* BNBTechnology_Hair_CoreML.mm in Sources */,
+				AC85031021907FEA007E76E4 /* GetInTouchCell.swift in Sources */,
+				7B3D8A6D2146A19B008C00C8 /* BNBTechnology_Body_Segmentation.mm in Sources */,
+				4DBF2722237C05A600CE7039 /* BNBRNDModelDataHandSkeleton.m in Sources */,
+				4DA0404A22243B3400EDFA00 /* coreMLHair_336x192.mlmodel in Sources */,
+				7B3D8A6F2146A1D6008C00C8 /* coreMLBodySegmentation.mlmodel in Sources */,
+				DD46163C2135CA9000935F06 /* BNBTechnology_EyeGaze.mm in Sources */,
+				D207A36822562D2200FC8669 /* BNBRNDSkinSegmentationViewController.swift in Sources */,
+				CE507CB1213804980013CD84 /* BNBRNDColorPickerViewController.swift in Sources */,
+				2EEBBD242166043000B1275A /* TextFieldWithInset.swift in Sources */,
+				AC85030C219078C5007E76E4 /* GetInTouchSubmitButtonCell.swift in Sources */,
+				ACECA8BA217E18B800CEA0F0 /* GetInTouchViewController.swift in Sources */,
+				AC94C8AF21889E2200C65952 /* BNBSettingsWebViewController.m in Sources */,
+				CE507CE2213D11E10013CD84 /* BNBSDKViewController.swift in Sources */,
+				CE56E740215396CD003D521C /* BNBApplicationConfig.m in Sources */,
+				CE507CC921381D2D0013CD84 /* BNBRNDGenderViewController.swift in Sources */,
+				AC85030621904A7E007E76E4 /* GetInTouchEmailCell.swift in Sources */,
+				DD4617112136967600935F06 /* BNBRNDModelData.m in Sources */,
+				DD4616322135CA9000935F06 /* BNBTechnology_FRX.mm in Sources */,
+				DD46171E2136C39900935F06 /* BNBRNDModelEyeSegmentation.m in Sources */,
+				CE7323D321634E87006B9FE0 /* BNBAlertViewController.swift in Sources */,
+				4DA0405B22256A8500EDFA00 /* BNBTechnology_Lips_CoreML.mm in Sources */,
+				4D27DBED216371570007DB25 /* coreMLHands.mlmodel in Sources */,
+				DD46163B2135CA9000935F06 /* BNBTechnology_Eyes_CoreML.mm in Sources */,
+				CE507CDB2139404A0013CD84 /* BNBRNDModelDataPulse.m in Sources */,
+				DD4617212136D6FB00935F06 /* BNBColorPickerCollectionViewCell.swift in Sources */,
+				CE35D0312151443C009AB90D /* coreMLHair_128x96.mlmodel in Sources */,
+				D245247423853EB0006F9127 /* BNBRNDHandsTrackingViewController.swift in Sources */,
+				CE5BB4C521354BEE0058743A /* BNBStyle.swift in Sources */,
+				DD4616312135CA9000935F06 /* BNBTechnology_Occlusion_CoreML.mm in Sources */,
+				4DBF272D237C0CB600CE7039 /* coreMLHandsPekarMessendger.mlmodel in Sources */,
+				4DA040582225683B00EDFA00 /* coreMLLips.mlmodel in Sources */,
+				AC6FC486214A528B00AD9287 /* BNBRNDLandmarksViewController.swift in Sources */,
+				CE5BB4F22135A6BF0058743A /* Storyboard+Utils.swift in Sources */,
+				4DED956C2380022400FA303D /* coreMLHandsSSD.mlmodel in Sources */,
+				ACB3A6202146A858005EF13D /* BNBRNDBackgroundViewController.swift in Sources */,
+				4DBF2738237C107400CE7039 /* coreMLHandsModelSK.mlmodel in Sources */,
+				ACECA8BD217F4A1E00CEA0F0 /* TextViewWithPlaceholder.swift in Sources */,
+				DD4616292135CA9000935F06 /* BNBTechnology_Face_Recognition.mm in Sources */,
+				DD4616392135CA9000935F06 /* BNBTechnology_Personality_CoreML.mm in Sources */,
+				DD46162D2135CA9000935F06 /* BNBTechnology_HairScin_Colors.mm in Sources */,
+				AC85030E21907995007E76E4 /* GetInTouchLabelCell.swift in Sources */,
+				CE5BB4CA213550200058743A /* BNBViewController.swift in Sources */,
+				4DB2B2D6216C99AC000955F6 /* coreMLSkin.mlmodel in Sources */,
+				D25CF020223FB2D000BA8C83 /* LipsSegmentationViewController.swift in Sources */,
+				CE5607B7213D398100ADF595 /* BNBTechnologySDKBehaviour.swift in Sources */,
+				CE5BB4CC213550BF0058743A /* BNBTechNavigationViewController.swift in Sources */,
+				CE801580213E6D9300F69EA0 /* BNBSDKTechnologiesHolder.swift in Sources */,
+				7B2F29D922DDFFC8008EEB07 /* BNBTechnology_Glasses_Camera.mm in Sources */,
+				DD4617172136A13900935F06 /* BNBRNDFeatureViewController.swift in Sources */,
+				CE507C8A2137EF4F0013CD84 /* BNBRNDHairSegmentationViewController.swift in Sources */,
+				CE5BB4D9213585FF0058743A /* BNBTechFeature.swift in Sources */,
+				CE5BB4DF21358A4E0058743A /* BNBTechExractorHelper.swift in Sources */,
+				AC388F1A213ECCA90075589C /* BNBTechnology_Action_Units.mm in Sources */,
+				CE56E7422153C8A0003D521C /* BNBApplicationConfigUpdater.swift in Sources */,
+				CE5BB4C721354DCB0058743A /* UIFont+Utils.swift in Sources */,
+				CE5BB4E521359D570058743A /* BNBTechnologyBehaviour.swift in Sources */,
+				CE507CBF21380CE60013CD84 /* UIColor+Utils.swift in Sources */,
+				DD46166E2135CBFD00935F06 /* coreMLFaceBeard.mlmodel in Sources */,
+				ACD6836E21493C9300ACD930 /* NoCameraAccessViewController.swift in Sources */,
+				D25CF024223FB50500BA8C83 /* BNBRNDModelLipsSegmentation.m in Sources */,
+				AC9EF7B12163673E00BAA461 /* PinpointManager.swift in Sources */,
+				CE507CB62138065B0013CD84 /* BNBRNDModelDataDistance.m in Sources */,
+				DD4617152136978900935F06 /* BNBRNDModelDataSkinAndHairColor.m in Sources */,
+				CE5BB4D221355ECA0058743A /* BNBCollectionViewCell.swift in Sources */,
+				CE7323D721635A49006B9FE0 /* BNBRNDModelDataOcclusion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2C36DF3237AEE9800CC2E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BanubaSdk;
+			targetProxy = D2C36DF2237AEE9800CC2E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE5BB4B021352E4D0058743A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5BB4B121352E4D0058743A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5BB4B521352E4E0058743A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5BB4B621352E4E0058743A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE5BB4B921352E4E0058743A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE5BB4BA21352E4E0058743A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5BB4BC21352E4E0058743A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0121FD148B6EB557C655BB58 /* Pods-TechDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				CURRENT_PROJECT_VERSION = 104;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = NEWUB88C7M;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TechDemo",
+					"$(PROJECT_DIR)/External/EffectPlayerFramework",
+					"$(PROJECT_DIR)/External",
+					"$(PROJECT_DIR)/../facerecognitionlib/third/opencv",
+					"$(PROJECT_DIR)/External/FRXNeuralFramework",
+				);
+				INFOPLIST_FILE = TechDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.7;
+				OTHER_LDFLAGS = (
+					"-framework",
+					"\"HockeySDK\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banuba.rnd-sdk.demo.TechDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = NO;
+				STRIP_STYLE = all;
+				SWIFT_OBJC_BRIDGING_HEADER = "TechDemo/TechDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		CE5BB4BD21352E4E0058743A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C4007542483AA626A10CF5 /* Pods-TechDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				CURRENT_PROJECT_VERSION = 104;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = NEWUB88C7M;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TechDemo",
+					"$(PROJECT_DIR)/External/EffectPlayerFramework",
+					"$(PROJECT_DIR)/External",
+					"$(PROJECT_DIR)/../facerecognitionlib/third/opencv",
+					"$(PROJECT_DIR)/External/FRXNeuralFramework",
+				);
+				INFOPLIST_FILE = TechDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.7;
+				OTHER_LDFLAGS = (
+					"-framework",
+					"\"HockeySDK\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banuba.rnd-sdk.demo.TechDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = NO;
+				STRIP_STYLE = all;
+				SWIFT_OBJC_BRIDGING_HEADER = "TechDemo/TechDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5BB4A421352E4D0058743A /* Build configuration list for PBXProject "TechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5BB4B921352E4E0058743A /* Debug */,
+				CE5BB4BA21352E4E0058743A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5BB4BB21352E4E0058743A /* Build configuration list for PBXNativeTarget "TechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5BB4BC21352E4E0058743A /* Debug */,
+				CE5BB4BD21352E4E0058743A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5BB4A121352E4D0058743A /* Project object */;
+}

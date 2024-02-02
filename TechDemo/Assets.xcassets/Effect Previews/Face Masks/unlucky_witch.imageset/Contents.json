@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "unlucky_witch.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

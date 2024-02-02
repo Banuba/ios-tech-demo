@@ -1,0 +1,105 @@
+{
+  "assets": {
+    "attachments": {
+      "main_color": {
+        "type": "color"
+      }
+    },
+    "images": {
+      "camera": {
+        "type": "procedural_texture",
+        "algorithm": "camera_composer"
+      }
+    },
+    "materials": {
+      "$builtin$materials/copy_pixels.0": {
+        "parameters": {},
+        "samplers": [
+          {
+            "image": "camera",
+            "name": "tex_src"
+          }
+        ],
+        "state": {
+          "backfaces": true,
+          "blend": "off",
+          "colorwrite": true,
+          "ztest": false,
+          "zwrite": false
+        }
+      }
+    },
+
+    "meshes": {
+      "quad_surface": "quad.bsm2"
+    },
+    "faces": {
+      "face0": {
+        "index": 0
+      }
+    }
+  },
+
+  "components": {
+    "face_tracker:0": {
+      "type": "face_tracker",
+      "face": "face0"
+    },
+    "copy_camera": {
+      "materials": ["$builtin$materials/copy_pixels.0"],
+      "mesh": "quad_surface",
+      "type": "mesh_instance"
+    }
+  },
+
+  "entities": {
+    "face_tracker0": {
+      "components": [
+        "face_tracker:0"
+      ]
+    },
+    "copy_camera": {
+      "components": [
+        "copy_camera"
+      ],
+      "layer": "camera"
+    }
+  },
+
+  "hierarchy": {
+    "face_tracker0":{
+
+    },
+    "root": [
+      "face_tracker0",
+      "copy_camera"
+    ]
+  },
+
+  "layers": {
+    "camera": {}
+
+  },
+
+  "render_list": {
+    "default": [
+      {
+        "layer": "camera",
+        "render_target": "Main"
+      }
+    ]
+  },
+
+  "render_targets": {
+    "Main": [
+      "main_color"
+    ]
+  },
+
+
+  "scene": "Glasses_detector",
+  "script": {
+    "type": "latest",
+    "entry_point": "config.js"
+  }
+}

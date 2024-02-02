@@ -1,0 +1,302 @@
+{
+    "assets": {
+        "attachments": {
+            "main_color": {
+                "type": "color"
+            },
+            "tex_nails_color": {
+                "type": "color"
+            },
+            "tex_nails_depth": {
+                "clear": [
+                    1.0
+                ],
+                "type": "depth"
+            }
+        },
+        "images": {
+          "camera": {
+            "type": "procedural_texture",
+            "algorithm": "camera_composer"
+          },
+          "Pattern_01.png": {
+                "file_name": "textures/Pattern_01.png",
+                "type": "texture"
+            },
+            "Pattern_02.png": {
+                "file_name": "textures/Pattern_02.png",
+                "type": "texture"
+            },
+            "Pattern_03.png": {
+                "file_name": "textures/Pattern_03.png",
+                "type": "texture"
+            },
+            "Pattern_04.png": {
+                "file_name": "textures/Pattern_04.png",
+                "type": "texture"
+            },
+            "Pattern_05.png": {
+                "file_name": "textures/Pattern_05.png",
+                "type": "texture"
+            },
+            "nails_segm": {
+                "type": "segmentation_mask",
+                "active": true,
+                "recognizer_feature_name": "nails"
+            }
+        },
+        "materials": {
+            "shaders/nail1": {
+                "samplers": [
+                  {
+                    "image": "Pattern_01.png",
+                    "name": "nail_tex"
+                  },
+                  {
+                    "image": "nails_segm",
+                    "name": "nail_segm"
+                  }
+                ],
+                "state": {
+                    "blend": "alpha",
+                    "backfaces": true,
+                    "colorwrite": true,
+                    "ztest": false,
+                    "zwrite": false
+                },
+                "geometry_topology": "triangles_strip"
+            },
+            "shaders/nail2": {
+                "samplers": [
+                  {
+                    "image": "Pattern_02.png",
+                    "name": "nail_tex"
+                  },
+                  {
+                    "image": "nails_segm",
+                    "name": "nail_segm"
+                  }
+                ],
+                "state": {
+                    "blend": "alpha",
+                    "backfaces": true,
+                    "colorwrite": true,
+                    "ztest": false,
+                    "zwrite": false
+                },
+                "geometry_topology": "triangles_strip"
+            },
+            "shaders/nail3": {
+                "samplers": [
+                  {
+                    "image": "Pattern_03.png",
+                    "name": "nail_tex"
+                  },
+                  {
+                    "image": "nails_segm",
+                    "name": "nail_segm"
+                  }
+                ],
+                "state": {
+                    "blend": "alpha",
+                    "backfaces": true,
+                    "colorwrite": true,
+                    "ztest": false,
+                    "zwrite": false
+                },
+                "geometry_topology": "triangles_strip"
+            },
+            "shaders/nail4": {
+                "samplers": [
+                  {
+                    "image": "Pattern_04.png",
+                    "name": "nail_tex"
+                  },
+                  {
+                    "image": "nails_segm",
+                    "name": "nail_segm"
+                  }
+                ],
+                "state": {
+                    "blend": "alpha",
+                    "backfaces": true,
+                    "colorwrite": true,
+                    "ztest": false,
+                    "zwrite": false
+                },
+                "geometry_topology": "triangles_strip"
+            },
+            "shaders/nail5": {
+                "samplers": [
+                  {
+                    "image": "Pattern_05.png",
+                    "name": "nail_tex"
+                  },
+                  {
+                    "image": "nails_segm",
+                    "name": "nail_segm"
+                  }
+                ],
+                "state": {
+                    "blend": "alpha",
+                    "backfaces": true,
+                    "colorwrite": true,
+                    "ztest": false,
+                    "zwrite": false
+                },
+                "geometry_topology": "triangles_strip"
+            },
+          "$builtin$materials/copy_pixels.0": {
+            "parameters": {},
+            "samplers": [
+              {
+                "image": "camera",
+                "name": "tex_src"
+              }
+            ],
+            "state": {
+              "backfaces": true,
+              "blend": "off",
+              "colorwrite": true,
+              "ztest": false,
+              "zwrite": false
+            }
+          }
+        },
+        "meshes": {
+            "plane_surface": "$builtin$meshes/fs_tri",
+            "tex_nails1": "$builtin$meshes/tex_nails",
+            "tex_nails2": "$builtin$meshes/tex_nails",
+            "tex_nails3": "$builtin$meshes/tex_nails",
+            "tex_nails4": "$builtin$meshes/tex_nails",
+            "tex_nails5": "$builtin$meshes/tex_nails",
+            "quad_surface": "meshes/quad.bsm2"
+        },
+        "hands":{
+            "tex_nails":{
+                "mesh" : "tex_nails1"
+            }
+        },
+        "media": {}
+    },
+    "components": {
+        "copy_camera": {
+          "materials": ["$builtin$materials/copy_pixels.0"],
+          "mesh": "quad_surface",
+          "type": "mesh_instance"
+        },
+        "tex_nails1": {
+            "materials": ["shaders/nail1"],
+            "mesh": "tex_nails1",
+            "type": "mesh_instance"
+        },
+        "tex_nails2": {
+            "materials": ["shaders/nail2"],
+            "mesh": "tex_nails2",
+            "type": "mesh_instance"
+        },
+        "tex_nails3": {
+            "materials": ["shaders/nail3"],
+            "mesh": "tex_nails3",
+            "type": "mesh_instance"
+        },
+        "tex_nails4": {
+            "materials": ["shaders/nail4"],
+            "mesh": "tex_nails4",
+            "type": "mesh_instance"
+        },
+        "tex_nails5": {
+            "materials": ["shaders/nail5"],
+            "mesh": "tex_nails5",
+            "type": "mesh_instance"
+        },
+        "hand_tracker": {
+            "hand": "tex_nails",
+             "type": "hand_tracker",
+             "tracking_type" : "tex_nails"
+        }
+    },
+    "entities": {
+        "copy_camera": {
+          "components": [
+            "copy_camera"
+          ],
+          "layer": "camera"
+        },
+        "nail1": {
+            "components": [
+                "tex_nails1"
+            ],
+            "layer": "tex_nails"
+        },
+        "nail2": {
+            "components": [
+                "tex_nails2"
+            ],
+            "layer": "tex_nails"
+        },
+        "nail3": {
+            "components": [
+                "tex_nails3"
+            ],
+            "layer": "tex_nails"
+        },
+        "nail4": {
+            "components": [
+                "tex_nails4"
+            ],
+            "layer": "tex_nails"
+        },
+        "nail5": {
+            "components": [
+                "tex_nails5"
+            ],
+            "layer": "tex_nails"
+        },
+        "hand_tracker" :{
+            "components":[
+                "hand_tracker"
+            ]
+        }
+    },
+    "hierarchy": {
+        "hand_tracker":[
+            "nail1",
+            "nail2",
+            "nail3",
+            "nail4",
+            "nail5"
+        ],
+        "root": [
+            "copy_camera",
+            "hand_tracker"
+        ]
+    },
+    "layers": {
+        "camera": {},
+        "tex_nails":{}
+    },
+    "render_list": {
+        "default": [
+            {
+                "layer": "camera",
+                "render_target": "cameraRT"
+            },
+            {
+                "layer": "tex_nails",
+                "render_target": "cameraRT"
+            }
+        ]
+    },
+    "render_targets": {
+        "cameraRT": [
+            "main_color",
+            "tex_nails_depth"
+        ]
+    },
+    "scene": "VTO_Nails_patternColor",
+    "script": {
+        "type": "latest",
+        "entry_point": "config.js"
+    }
+}
