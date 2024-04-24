@@ -6,7 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/sdk-banuba/banuba-sdk-podspecs.git'
 
 target 'TechDemo' do
-  pod 'BanubaSdk', '1.11.0'
+  pod 'BanubaSdk', '1.12.0'
   pod 'Device', '~> 3.3.0'
   pod 'Firebase', '10.5.0' # https://firebase.google.com/support/release-notes/ios
   pod 'Firebase/Crashlytics' # https://github.com/firebase/firebase-ios-sdk/blob/master/Crashlytics/CHANGELOG.md
